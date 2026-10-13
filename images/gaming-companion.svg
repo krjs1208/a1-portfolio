@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560">
+  <title>AI Gaming Companion portfolio concept illustration</title>
+  <rect width="800" height="560" fill="#e5e9ec"/><circle cx="660" cy="84" r="176" fill="#d6dee3"/><circle cx="140" cy="526" r="217" fill="#dbe2e7"/>
+  <rect x="128" y="119" width="478" height="280" rx="18" fill="#c0cdd2"/>
+  <rect x="118" y="107" width="478" height="280" rx="18" fill="#344b4d"/>
+  <rect x="138" y="128" width="438" height="218" rx="9" fill="#516b68"/>
+  <circle cx="475" cy="194" r="36" fill="#b8c9ab"/>
+  <path d="M138 301L221 215L292 276L387 175L489 295L538 234L576 282V346H138Z" fill="#869e85"/>
+  <path d="M138 328L229 270L290 322L382 241L476 328L534 290L576 316V346H138Z" fill="#adc0a0"/>
+  <rect x="270" y="350" width="174" height="37" rx="5" fill="#344b4d"/>
+  <path d="M274 408C244 403 216 414 203 455C196 479 204 496 221 497C241 498 250 474 270 472H380C400 474 409 498 429 497C446 496 454 479 447 455C434 414 406 403 376 408Z" fill="#f7f7ee" stroke="#708783" stroke-width="3"/>
+  <path d="M240 432V458M227 445H253" stroke="#49645d" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="394" cy="435" r="6" fill="#91a77e"/><circle cx="410" cy="451" r="6" fill="#6c8981"/>
+  <circle cx="292" cy="457" r="9" fill="#627e70"/><circle cx="355" cy="457" r="9" fill="#627e70"/>
+  <rect x="460" y="287" width="232" height="112" rx="16" fill="#fffefa" stroke="#b4c4bd" stroke-width="2"/>
+  <text x="481" y="314" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#405b4f">A voice in your corner.</text>
+  <path d="M482 349V353M493 341V361M504 332V370M515 345V357M526 327V375M537 335V367M548 343V359M559 329V373M570 339V363M581 345V357M592 335V367M603 328V374M614 340V362M625 346V356M636 338V364M647 344V358M658 350V352" stroke="#789168" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="165" cy="365" r="4" fill="#a3baa0"/>
+</svg>

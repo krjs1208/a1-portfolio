@@ -1,24 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kexin Chen">
+    <meta name="description" content="Kexin Chen's portfolio: Informatics at UC Irvine, human-computer interaction, and UX design projects.">
+    <title>Kexin Chen | HCI &amp; UX Portfolio</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- The skip link is the first keyboard stop on the page. -->
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-<!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
--->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="wordmark" href="#top" aria-label="Kexin Chen, back to top">
+          <span class="monogram" aria-hidden="true">kc.</span>
+          <span>Kexin Chen</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#focus">Focus</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
-</head>
-<body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
-</body>
+    <main id="main" tabindex="-1">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Informatics at UC Irvine <span aria-hidden="true">/</span> HCI &amp; UX</p>
+          <h1 id="hero-title">Thoughtful interfaces.<br><em>Everyday impact.</em></h1>
+          <p class="hero-intro">Hi, I'm Kexin. I explore how technology can make everyday experiences feel clearer, safer, and more connected.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">&darr;</span></a>
+            <a class="text-link" href="#about">A little about me <span aria-hidden="true">&nearr;</span></a>
+          </div>
+          <p class="location"><span class="location-dot" aria-hidden="true"></span> Based in Irvine, California</p>
+        </div>
+
+        <aside class="design-note" aria-labelledby="lens-title">
+          <div class="note-topline"><span class="eyebrow">A few things I care about</span><span class="note-star" aria-hidden="true">✳</span></div>
+          <h2 id="lens-title">The person<br>behind the screen.</h2>
+          <ol class="lens-list">
+            <li><span class="lens-number" aria-hidden="true">01</span><span>Understand the context.</span></li>
+            <li><span class="lens-number" aria-hidden="true">02</span><span>Make choices clear.</span></li>
+            <li><span class="lens-number" aria-hidden="true">03</span><span>Design with care.</span></li>
+          </ol>
+          <p class="note-foot">Curious about people.<br>Intentional about interaction.</p>
+        </aside>
+      </section>
+
+      <section class="work-section container" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">From a need to an idea.</h2></div>
+          <p>Course projects exploring housing,<br class="desktop-break"> safety, and play.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Covers are original portfolio illustrations, not product screenshots. -->
+          <article class="project project-featured" aria-labelledby="zotrent-title">
+            <figure class="project-figure cover-housing">
+              <img src="images/zotrent.svg" width="800" height="560" alt="ZOTrent concept: a rental home connected with compatible roommates.">
+              <figcaption>Portfolio illustration</figcaption>
+            </figure>
+            <div class="project-copy">
+              <p class="project-kicker">01 <span aria-hidden="true">/</span> Housing &amp; community</p>
+              <h3 id="zotrent-title">ZOTrent</h3>
+              <p class="project-subtitle">Finding a place. Finding your people.</p>
+              <p>A course project exploring rental housing and roommate matching for UCI students, with particular attention to the challenges international students face.</p>
+              <ul class="tags" aria-label="ZOTrent topics"><li>Student housing</li><li>Roommate matching</li><li>UX design</li></ul>
+              <details class="project-details">
+                <summary>Explore the ZOTrent project brief</summary>
+                <div class="details-content">
+                  <h4>The context</h4>
+                  <p>Finding housing also means making decisions about location, cost, and who to live with. International students may be navigating an unfamiliar rental process.</p>
+                  <h4>The concept</h4>
+                  <p>Bring rental listings and roommate matching into a student-focused experience, with UCI email registration as part of the concept.</p>
+                  <h4>A design question</h4>
+                  <p>How can an interface help students compare both a place to live and the people they might share it with?</p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="project" aria-labelledby="safety-title">
+            <figure class="project-figure cover-safety">
+              <img src="images/chat-safety.svg" width="800" height="560" loading="lazy" alt="Chat safety concept: conversation bubbles, a shield, and a moderation panel.">
+              <figcaption>Portfolio illustration</figcaption>
+            </figure>
+            <div class="project-copy">
+              <p class="project-kicker">02 <span aria-hidden="true">/</span> Safety &amp; communication</p>
+              <h3 id="safety-title">Safer conversations</h3>
+              <p class="project-subtitle">A children's chat safety concept.</p>
+              <p>A design studio project considering children, parents, and moderators as different stakeholders in a safer online chat experience.</p>
+              <ul class="tags" aria-label="Chat safety topics"><li>Interaction design</li><li>Moderation</li><li>Mobile UI</li></ul>
+              <details class="project-details">
+                <summary>Explore the chat safety project brief</summary>
+                <div class="details-content">
+                  <h4>The stakeholders</h4>
+                  <p>Children need understandable interactions; parents and moderators have different responsibilities when a concern is reported.</p>
+                  <h4>The design focus</h4>
+                  <p>Explore mobile interfaces, moderation filters, and report details that make the relevant information easier to find.</p>
+                  <h4>A design question</h4>
+                  <p>How can safety controls feel understandable to a child while giving a moderator enough context to review a report?</p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="project" aria-labelledby="gaming-title">
+            <figure class="project-figure cover-gaming">
+              <img src="images/gaming-companion.svg" width="800" height="560" loading="lazy" alt="Gaming companion concept: a controller and a voice guidance waveform.">
+              <figcaption>Portfolio illustration</figcaption>
+            </figure>
+            <div class="project-copy">
+              <p class="project-kicker">03 <span aria-hidden="true">/</span> AI &amp; play</p>
+              <h3 id="gaming-title">AI Gaming Companion</h3>
+              <p class="project-subtitle">Guidance in the flow of play.</p>
+              <p>A game design project exploring real-time voice guidance as a way to support players without asking them to look away from their game.</p>
+              <ul class="tags" aria-label="Gaming companion topics"><li>Voice interaction</li><li>AI concepts</li><li>Game experience</li></ul>
+              <details class="project-details">
+                <summary>Explore the gaming companion project brief</summary>
+                <div class="details-content">
+                  <h4>The context</h4>
+                  <p>During a game, attention is already divided between the action on screen and the decisions a player needs to make.</p>
+                  <h4>The concept</h4>
+                  <p>Explore an AI companion that offers voice-based tips in real time, with the experience centered on how help fits into play.</p>
+                  <h4>A design question</h4>
+                  <p>When is a tip helpful, and when does it become an interruption?</p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-title"><p class="eyebrow">02 / A little about me</p><h2 id="about-title">People first.<br><em>Curiosity always.</em></h2></div>
+          <div class="about-copy">
+            <p>I'm Kexin Chen, an undergraduate studying Informatics at the University of California, Irvine. My interests sit at the intersection of human-computer interaction, UX design, and emerging technology.</p>
+            <p>I'm drawn to everyday problems where a small interaction can make a meaningful difference: finding a roommate, understanding a safety concern, or getting help at the right moment.</p>
+            <p>I'm also interested in exploring AI, games, and physical interaction as I continue developing my design practice.</p>
+            <a class="text-link" href="https://www.informatics.uci.edu/">Explore Informatics at UCI <span aria-hidden="true">&nearr;</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="focus-section container" id="focus" aria-labelledby="focus-title">
+        <div class="section-heading"><div><p class="eyebrow">03 / What I'm exploring</p><h2 id="focus-title">A growing design practice.</h2></div><p>Areas I'm interested in<br class="desktop-break"> developing further.</p></div>
+        <!-- This is a real data table, with a caption and scoped row/column headers. -->
+        <div class="table-wrapper">
+          <table class="focus-table">
+            <caption>Design interests and the questions behind them</caption>
+            <thead><tr><th scope="col" id="area-header">Area</th><th scope="col" id="question-header">A question I care about</th></tr></thead>
+            <tbody>
+              <tr><th scope="row" id="hci-row" headers="area-header">Human-computer interaction</th><td headers="hci-row question-header">How can technology fit people's needs, context, and abilities?</td></tr>
+              <tr><th scope="row" id="ux-row" headers="area-header">UX &amp; interaction design</th><td headers="ux-row question-header">How can an interface make the next step feel understandable?</td></tr>
+              <tr><th scope="row" id="ai-row" headers="area-header">AI &amp; playful experiences</th><td headers="ai-row question-header">How can assistance support an experience without taking it over?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="closing-note"><p>Good design starts with paying attention.</p><a class="text-link" href="#work">Revisit the projects <span aria-hidden="true">&uarr;</span></a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-inner"><p>&copy; 2026 Kexin Chen</p><p>Made with curiosity, HTML, and CSS.</p><a href="#top">Back to top <span aria-hidden="true">&uarr;</span></a></div></footer>
+  </body>
 </html>

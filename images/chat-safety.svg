@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560">
+  <title>Chat safety portfolio concept illustration</title>
+  <rect width="800" height="560" fill="#eee8df"/><circle cx="92" cy="119" r="153" fill="#e4dace"/><circle cx="690" cy="513" r="196" fill="#e4dccf"/>
+  <rect x="349" y="144" width="304" height="258" rx="16" fill="#d9cbbc"/>
+  <rect x="339" y="132" width="304" height="258" rx="16" fill="#fffefa" stroke="#cdbdaa" stroke-width="2"/>
+  <text x="365" y="171" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#4e4c3d">A little more context.</text>
+  <rect x="365" y="192" width="87" height="23" rx="11" fill="#e5eadb"/><rect x="461" y="192" width="70" height="23" rx="11" fill="#efe8df"/>
+  <text x="377" y="208" font-family="Arial, sans-serif" font-size="10" fill="#42553d">Review report</text><text x="476" y="208" font-family="Arial, sans-serif" font-size="10" fill="#5b5145">Filters</text>
+  <path d="M365 240H614M365 286H614M365 332H614" stroke="#e4ddd1" stroke-width="2"/>
+  <rect x="366" y="252" width="152" height="7" rx="3" fill="#9b927e"/><rect x="366" y="268" width="226" height="5" rx="2" fill="#d5cdbf"/>
+  <rect x="366" y="298" width="173" height="7" rx="3" fill="#9b927e"/><rect x="366" y="314" width="216" height="5" rx="2" fill="#d5cdbf"/>
+  <rect x="366" y="344" width="123" height="7" rx="3" fill="#9b927e"/><rect x="366" y="360" width="196" height="5" rx="2" fill="#d5cdbf"/>
+  <rect x="171" y="79" width="198" height="359" rx="27" fill="#bfb19d"/>
+  <rect x="161" y="67" width="198" height="359" rx="27" fill="#fffefa" stroke="#6d7761" stroke-width="3"/>
+  <rect x="225" y="82" width="72" height="12" rx="6" fill="#6d7761"/>
+  <text x="184" y="128" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#405438">Let's talk.</text>
+  <text x="184" y="151" font-family="Arial, sans-serif" font-size="11" fill="#66745c">With safety in mind.</text>
+  <rect x="180" y="178" width="127" height="63" rx="14" fill="#e9eee0"/><rect x="194" y="195" width="79" height="6" rx="3" fill="#9caa8e"/><rect x="194" y="210" width="95" height="6" rx="3" fill="#9caa8e"/>
+  <rect x="208" y="257" width="133" height="63" rx="14" fill="#d4dfc7"/><rect x="223" y="274" width="90" height="6" rx="3" fill="#7d966b"/><rect x="223" y="290" width="76" height="6" rx="3" fill="#7d966b"/>
+  <rect x="181" y="353" width="157" height="38" rx="18" fill="#f3f1e9" stroke="#d5d7c9"/><circle cx="317" cy="372" r="10" fill="#5b744c"/><path d="M312 372H322M318 368L322 372L318 376" stroke="#fff" fill="none" stroke-width="1.6"/>
+  <circle cx="588" cy="390" r="66" fill="#4f6a45"/>
+  <path d="M588 349L620 362V386Q620 413 588 430Q556 413 556 386V362Z" fill="#e3ebd6"/>
+  <path d="M574 389L584 399L604 377" fill="none" stroke="#4f6a45" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

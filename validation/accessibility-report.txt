@@ -1,0 +1,1979 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+
+<head>
+	<title>Web Accessibility Checker for WCAG 2.0 ADA, AODA, EQA Compliance Monitoring</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="Generator" content="AChecker - Copyright 2009 by ATRC http://atrc.utoronto.ca/" />
+	<meta name="keywords" content="achecker,free, open source, accessibility checker, accessibility reviewer, accessibility evaluator, accessibility evaluation, WCAG evaluation, 508 evaluation, BITV evaluation, evaluate accessibility, test accessibility, review accessibility, ATRC, WCAG 2, STANCA, BITV, Section 508." />
+	<meta name="description" content="AChecker is a Web accessibility evalution tool designed to help Web content developers and Web application developers ensure their Web content is accessible to everyone regardless to the technology they may be using, or their abilities or disabilities." />
+	<base href="https://achecks.org/" /><meta name="viewport" content="width=device-width"><script async src="https://www.googletagmanager.com/gtag/js?id=G-CGLFB99MLR"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-CGLFB99MLR');</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1106597921617431" crossorigin="anonymous"></script><style>html body{font-size:large;}html .bottom,html #liquid-round{width:auto;width:fit-content;}</style>
+	<link rel="shortcut icon" href="https://achecks.org/images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://achecks.org/themes/default/forms.css" type="text/css" />
+	<link rel="stylesheet" href="https://achecks.org/themes/default/styles.css" type="text/css" />
+	<!--[if IE]>
+	  <link rel="stylesheet" href="https://achecks.org/themes/default/ie_styles.css" type="text/css" />
+	<![endif]-->
+	<script src="https://achecks.org/jscripts/lib/jquery.js" type="text/javascript"></script>
+	<script src="https://achecks.org/jscripts/lib/jquery-URLEncode.js" type="text/javascript"></script>
+	<script src="https://achecks.org/jscripts/AChecker.js" type="text/javascript"></script>
+
+		
+	<script language="javascript" type="text/javascript">
+	//<!--
+
+var AChecker = AChecker || {};
+AChecker.lang = AChecker.lang || {};
+
+(function () {
+
+    // Define langauge translations that are used in checker.js
+    // @ see checker/js/checker.js
+    AChecker.lang.provide_uri = "Please provide a uri!";
+    AChecker.lang.provide_html_file = "Please provide a html file!";
+    AChecker.lang.provide_upload_file = "Please upload html (or htm) file only!";
+    AChecker.lang.provide_html_input = "Please provide a html input!";
+    AChecker.lang.wait = "Please wait ...";
+    AChecker.lang.get_file = "Get File";
+    AChecker.lang.error_occur = "An error occured:";
+    AChecker.lang.pass_decision = "Pass Decision Made";
+    AChecker.lang.warning = "Warning: Confirmation Required";
+    AChecker.lang.manual_check = "Manual Check Required";
+    AChecker.lang.get_seal = '&nbsp;&nbsp;<span style="color:#E41B17;;border:thin solid #E41B17;"><a href="checker/index.php#seals_div">Conformance seal now issued.</a></span>';
+    AChecker.lang.congrats_likely = '<img src="https://achecks.org/images/feedback.gif" alt="Feedback" />  Congratulations! No likely problems.';
+    AChecker.lang.congrats_potential = '<img src="https://achecks.org/images/feedback.gif" alt="Feedback" />  Congratulations! No potential problems.';
+
+})();
+	//-->
+	</script>
+	<script src="https://achecks.org/checker/js/checker.js" type="text/javascript"></script>
+</head>
+
+<body onload="AChecker.input.initialize('AC_by_paste', 'by_guideline');">
+
+<a href="checker/index.php#output_div"><img src="images/clr.gif" height="1" width="1" alt="[ jump_to_report ]" border="0" /></a>
+<div id="liquid-round"><div class="top"><span></span></div>
+<div class="center-content" id="center-content">
+		<div id="logo">
+			<a href="https://achecks.org/achecker"><img src="https://achecks.org/themes/default/images/checker_logo.png"  alt="AChecker" style="border:none;" /></a>
+		</div>
+	<div id="banner">
+
+	<span id="logininfo"> 
+        				<a href="https://achecks.org/login" >Login</a>
+				&nbsp;&nbsp;
+				<a href="https://achecks.org/signup" >Register</a>
+        	</span>
+		
+	</div>
+
+	<div class="topnavlistcontainer">
+	<!-- the main navigation. in our case, tabs -->
+		<ul class="navigation">
+																				<li class="navigation"><a href="https://www.achecks.org" title="AChecker Web Accessibility Checker via ACHECKS" class="active"><span class="nav">AChecker Web Accessibility Checker</span></a></li>
+									</ul>
+	</div>
+
+	<!-- the sub navigation and guide -->
+	<div id="sub-menu">
+		<!-- guide -->
+				<div>
+			<a href="https://www.achecks.org/pricing/" id="guide" title="A subscription-based monitoring service for accessibility compliance"><em>Subscribe for automatic accessibility monitoring with ACHECKS!</em></a>
+		</div>
+		
+		<!-- the sub navigation -->
+		<div id="sub-navigation">
+					&nbsp;
+				</div>
+	</div>
+
+
+<a name="content" title="Start Content"></a>
+<table style="width:100%">
+<tr>
+<td>
+<div class="center-input-form">
+<form name="input_form" enctype="multipart/form-data" method="post" action="/checker/index.php" >
+
+	<div class="left-col" style="float:left;clear:left;"><br />
+	<fieldset class="group_form"><legend class="group_form">Check Accessibility By:</legend>
+
+		<div class="topnavlistcontainer"><br />
+			<ul class="navigation">
+				<li class="navigation"><a href="javascript:void(0)" accesskey="a" title="URL Alt+1" id="AC_menu_by_uri" onclick="return AChecker.input.onClickTab('AC_by_uri');" ><span class="nav">URL</span></a></li>
+				<li class="navigation"><a href="javascript:void(0)" accesskey="b" title="Upload Alt+2" id="AC_menu_by_upload" onclick="return AChecker.input.onClickTab('AC_by_upload');" ><span class="nav">Upload</span></a></li>
+				<li class="navigation"><a href="javascript:void(0)" accesskey="c" title="Markup Alt+3" id="AC_menu_by_paste" onclick="return AChecker.input.onClickTab('AC_by_paste');" class="active"><span class="nav">Markup</span></a></li>
+			</ul>
+		</div>
+
+		<div id="AC_by_uri" class="input_tab" style="display:none">
+			<div style="text-align:center;">
+				<label for="checkuri">Address:</label>
+				<input type="text" name="uri" id="checkuri" value="" size="50"   />
+				<div class="validation_submit_div">
+					<div class="spinner_div">
+						<img class="spinner_img" id="AC_spinner_by_uri" style="display:none" src="https://achecks.org/themes/default/images/spinner.gif" alt="Accessibility Validation in Progress" />
+						&nbsp;
+					</div>
+					<input class="validation_button" type="submit" name="validate_uri" id="validate_uri" size="100" value="Check It" onclick="return AChecker.input.validateURI();" />
+				</div>
+			</div>
+		</div>
+
+		<div id="AC_by_upload" class="input_tab" style="display:none">
+			<div style="text-align:center;">
+				<label for="checkfile">File:</label>
+				<input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
+				<input type="file" id="checkfile" name="uploadfile" size="47" />
+
+				<div class="validation_submit_div">
+					<div class="spinner_div">
+						<img class="spinner_img" id="AC_spinner_by_upload" style="display:none" src="https://achecks.org/themes/default/images/spinner.gif" alt="Accessibility Validation in Progress" />
+						&nbsp;
+					</div>
+					<input class="validation_button" type="submit" name="validate_file" id="validate_file" value="Check It" onclick="return AChecker.input.validateUpload();"  />
+				</div>
+			</div>
+		</div>
+
+		<div id="AC_by_paste" class="input_tab" style="display:block">
+			<label for="checkpaste">Paste from clipboard complete HTML source:</label>
+			<div style="text-align:center;">
+				<textarea rows="20" style="width:90%;" name="pastehtml" id="checkpaste">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Kexin Chen&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Kexin Chen's portfolio: Informatics at UC Irvine, human-computer interaction, and UX design projects.&quot;&gt;
+    &lt;title&gt;Kexin Chen | HCI &amp;amp; UX Portfolio&lt;/title&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;images/favicon.svg&quot; type=&quot;image/svg+xml&quot;&gt;
+    &lt;style&gt;
+/* IN4MATX 133 A1: original, buildless portfolio.
+   Structure: base / navigation / hero / projects / about / table / breakpoints.
+   System font stacks and local assets keep the page usable offline. */
+
+/* Base and visible keyboard focus. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: #24382f;
+  background-color: #f7f6f0;
+  font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+h1, h2, h3, h4, p, figure { margin: 0; }
+h1, h2, h3 { line-height: 1.15; }
+h1, h2 { font-family: Georgia, &quot;Times New Roman&quot;, serif; font-weight: 400; }
+em { font-weight: inherit; }
+a { color: #254d3c; text-underline-offset: 0.22em; }
+a:hover { color: #102d22; }
+a:focus, summary:focus { outline: 3px solid #8e4024; outline-offset: 5px; }
+img { display: block; max-width: 100%; height: auto; }
+ul { margin: 0; padding: 0; }
+.container { width: 90%; max-width: 1120px; margin-left: auto; margin-right: auto; }
+.eyebrow { color: #506453; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+.text-link { font-size: 0.9rem; font-weight: 600; }
+.text-link &gt; span { display: inline-block; margin-left: 0.4rem; }
+.skip-link { position: absolute; top: -12rem; left: 1rem; z-index: 10; padding: 0.75rem 1rem; background-color: #fff; color: #24382f; }
+.skip-link:focus { top: 1rem; }
+
+/* The navigation stays visible and wraps on narrow screens; no hidden menu. */
+.site-header { border-bottom: 1px solid #d9ded2; }
+.header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding-top: 1.35rem; padding-bottom: 1.35rem; }
+.wordmark { display: inline-flex; align-items: center; color: #24382f; font-weight: 600; font-size: 0.88rem; text-decoration: none; }
+.monogram { margin-right: 0.9rem; font-size: 2rem; font-family: Georgia, &quot;Times New Roman&quot;, serif; font-weight: 400; line-height: 1; }
+.nav-list { display: flex; flex-wrap: wrap; list-style: none; }
+.nav-list &gt; li + li { margin-left: 1.6rem; }
+.nav-list a { display: inline-block; padding: 0.55rem 0.15rem; font-size: 0.88rem; text-decoration: none; border-bottom: 1px solid transparent; }
+.nav-list a:hover { border-bottom-color: #254d3c; }
+
+/* Two-column hero becomes one column below 760px. */
+.hero { display: grid; grid-template-columns: 1.55fr 1fr; grid-gap: 5%; align-items: center; padding-top: 5.75rem; padding-bottom: 6rem; }
+.hero-copy { min-width: 0; }
+.hero h1 { margin-top: 1.35rem; font-size: 3.6rem; letter-spacing: -0.05em; }
+.hero h1 em { color: #47634b; }
+.hero-intro { max-width: 29rem; margin-top: 1.5rem; color: #4d5b50; font-size: 1.05rem; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; margin-top: 1.8rem; }
+.hero-actions &gt; .text-link { margin: 0.8rem 0 0.8rem 1.5rem; }
+.button { display: inline-flex; align-items: center; justify-content: center; padding: 0.9rem 1.3rem; border: 1px solid #254d3c; font-size: 0.9rem; font-weight: 600; text-decoration: none; border-radius: 0.3rem; }
+.button &gt; span { margin-left: 1rem; }
+.button-primary { color: #fff; background-color: #254d3c; }
+.button-primary:hover { color: #fff; background-color: #102d22; }
+.location { display: flex; align-items: center; margin-top: 1.8rem; color: #596658; font-size: 0.78rem; }
+.location-dot { width: 0.4rem; height: 0.4rem; margin-right: 0.6rem; border-radius: 50%; background-color: #526c46; }
+.design-note { min-width: 0; padding: 2rem; border: 1px solid #cbd3bf; border-radius: 0.6rem; background-color: #e9eddc; }
+.note-topline { display: flex; align-items: center; justify-content: space-between; }
+.note-topline .eyebrow { max-width: 12rem; font-size: 0.64rem; }
+.note-star { margin-left: 1rem; color: #526943; font-size: 2.4rem; line-height: 1; }
+.design-note h2 { margin-top: 1.8rem; font-size: 2.5rem; letter-spacing: -0.03em; }
+.lens-list { margin: 1.8rem 0 0; padding: 0; list-style: none; }
+.lens-list &gt; li { display: flex; padding: 0.7rem 0; border-top: 1px solid #cbd3bf; font-size: 0.86rem; }
+.lens-number { margin-right: 0.9rem; color: #53644c; font-size: 0.7rem; }
+.note-foot { margin-top: 1.2rem; color: #50604c; font-size: 0.72rem; }
+
+/* One featured project followed by a two-column project grid. */
+.work-section { padding-bottom: 5rem; }
+.section-heading { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; margin-bottom: 2rem; }
+.section-heading h2 { margin-top: 0.65rem; font-size: 2.4rem; letter-spacing: -0.035em; }
+.section-heading &gt; p { margin-top: 1rem; color: #576353; font-size: 0.86rem; }
+.projects-grid { display: flex; flex-wrap: wrap; gap: 1.8rem; }
+.project { flex: 0 0 calc(50% - 0.9rem); min-width: 0; border: 1px solid #d5dbcd; border-radius: 0.6rem; background-color: #fffefa; }
+.project-featured { display: flex; flex-basis: 100%; }
+.project-figure { position: relative; min-width: 0; border-radius: 0.6rem 0.6rem 0 0; }
+.project-featured .project-figure { flex: 0 0 52%; border-radius: 0.6rem 0 0 0.6rem; }
+.project-figure img { width: 100%; border-radius: inherit; }
+.project-figure figcaption { position: absolute; bottom: 0.8rem; left: 1.1rem; color: #405347; font-size: 0.65rem; }
+.cover-housing { background-color: #e6eddf; }
+.cover-safety { background-color: #eee8df; }
+.cover-gaming { background-color: #e5e9ec; }
+.project-copy { min-width: 0; padding: 1.8rem; }
+.project-featured .project-copy { flex: 1; padding: 2.3rem; }
+.project-kicker { margin-bottom: 0.8rem; color: #55644f; font-size: 0.67rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; }
+.project-kicker &gt; span { margin: 0 0.45rem; }
+.project h3 { font-size: 1.6rem; font-weight: 600; letter-spacing: -0.025em; }
+.project-subtitle { margin-top: 0.5rem; color: #435345; font-size: 0.94rem; font-weight: 500; }
+.project-subtitle + p { margin-top: 1rem; color: #566152; font-size: 0.88rem; }
+.tags { display: flex; flex-wrap: wrap; margin-top: 1.2rem; list-style: none; }
+.tags &gt; li { margin: 0 0.4rem 0.45rem 0; padding: 0.15rem 0.65rem; border: 1px solid #d7ddce; border-radius: 1rem; color: #475743; background-color: #f4f6ee; font-size: 0.67rem; }
+
+/* Native details/summary supports both keyboard and pointer interaction. */
+.project-details { margin-top: 1.1rem; border-top: 1px solid #d9decf; }
+.project-details summary { padding-top: 1rem; padding-bottom: 0.5rem; color: #254d3c; font-size: 0.8rem; font-weight: 600; cursor: pointer; }
+.project-details summary:hover { text-decoration: underline; }
+.details-content { padding-top: 0.8rem; }
+.details-content h4 { font-size: 0.86rem; line-height: 1.5; }
+.details-content p { margin-top: 0.35rem; color: #566152; font-size: 0.84rem; }
+.details-content p + h4 { margin-top: 1rem; }
+
+/* About uses semantic content rather than a visual table. */
+.about-section { padding-top: 4rem; padding-bottom: 4rem; border-top: 1px solid #d9ded2; border-bottom: 1px solid #d9ded2; background-color: #edf0e4; }
+.about-grid { display: grid; grid-template-columns: 1fr 1.15fr; grid-gap: 8%; }
+.about-title h2 { margin-top: 1rem; font-size: 2.9rem; letter-spacing: -0.04em; }
+.about-title em { color: #47634b; }
+.about-copy { min-width: 0; color: #465544; font-size: 0.95rem; }
+.about-copy p + p { margin-top: 1rem; }
+.about-copy .text-link { display: inline-block; margin-top: 1.4rem; }
+
+/* An accessible two-column data table wraps inside small screens. */
+.focus-section { padding-top: 4rem; padding-bottom: 4rem; }
+.table-wrapper { min-width: 0; }
+.focus-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 0.9rem; }
+.focus-table caption { padding-bottom: 0.9rem; color: #566152; font-size: 0.78rem; text-align: left; caption-side: top; }
+.focus-table th, .focus-table td { padding: 1rem 1.2rem; border-bottom: 1px solid #d3dac9; text-align: left; vertical-align: top; overflow-wrap: break-word; }
+.focus-table thead th { color: #3b503c; background-color: #e6ebdd; font-size: 0.75rem; font-weight: 600; }
+.focus-table thead th:first-child { width: 35%; }
+.focus-table tbody th { font-weight: 500; }
+.focus-table td { color: #52604e; }
+.closing-note { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #d3dac9; }
+.closing-note p { margin-bottom: 0.5rem; font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 1.65rem; }
+.closing-note .text-link { margin-bottom: 0.5rem; }
+.site-footer { border-top: 1px solid #d9ded2; }
+.footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding-top: 1.5rem; padding-bottom: 1.5rem; color: #576353; font-size: 0.72rem; }
+.footer-inner &gt; * { margin: 0.25rem 1rem 0.25rem 0; }
+
+/* Tablet: reduce type and spacing before columns become too cramped. */
+@media (max-width: 1000px) {
+  .hero { padding-top: 4rem; padding-bottom: 4rem; grid-gap: 4%; }
+  .hero h1 { font-size: 2.8rem; }
+  .hero-intro { font-size: 0.98rem; }
+  .design-note { padding: 1.5rem; }
+  .design-note h2 { font-size: 2.05rem; }
+  .project-featured .project-copy { padding: 1.7rem; }
+  .hero-actions &gt; .text-link { margin-left: 1rem; }
+}
+
+/* Mobile: preserve every project and navigation item in reading order. */
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; grid-gap: 2.5rem; padding-top: 3rem; padding-bottom: 3.5rem; }
+  .hero h1 { font-size: 2.8rem; }
+  .hero-intro { max-width: 34rem; }
+  .design-note { padding: 1.6rem; }
+  .design-note h2 { margin-top: 1rem; font-size: 2.2rem; }
+  .lens-list { margin-top: 1.2rem; }
+  .note-foot { margin-top: 0.9rem; }
+  .section-heading { display: block; }
+  .section-heading h2 { font-size: 2.1rem; }
+  .desktop-break { display: none; }
+  .project { flex-basis: 100%; }
+  .project-featured { display: block; }
+  .project-featured .project-figure { border-radius: 0.6rem 0.6rem 0 0; }
+  .project-copy, .project-featured .project-copy { padding: 1.5rem; }
+  .work-section { padding-bottom: 3rem; }
+  .about-section { padding-top: 3rem; padding-bottom: 3rem; }
+  .about-grid { grid-template-columns: 1fr; grid-gap: 1.6rem; }
+  .about-title h2 { font-size: 2.4rem; }
+  .focus-section { padding-top: 3rem; padding-bottom: 3rem; }
+  .focus-table th, .focus-table td { padding: 0.85rem 0.55rem; font-size: 0.8rem; }
+  .focus-table thead th:first-child { width: 38%; }
+  .closing-note { display: block; margin-top: 2rem; }
+  .closing-note p { font-size: 1.5rem; }
+  .closing-note .text-link { display: inline-block; margin-top: 0.8rem; }
+}
+
+/* Small phones and enlarged text: let the header and calls to action wrap. */
+@media (max-width: 430px) {
+  .container { width: 89%; }
+  .header-inner { display: block; padding-top: 1.2rem; padding-bottom: 0.7rem; }
+  .nav-list { margin-top: 0.6rem; }
+  .nav-list &gt; li + li { margin-left: 1.8rem; }
+  .hero h1 { font-size: 2.3rem; }
+  .hero .eyebrow { font-size: 0.66rem; }
+  .hero-actions { display: block; }
+  .hero-actions &gt; .text-link { display: inline-block; margin: 1.1rem 0 0; }
+  .design-note h2 { font-size: 2rem; }
+  .section-heading h2 { font-size: 1.9rem; }
+  .project-copy { padding: 1.25rem; }
+  .project h3 { font-size: 1.45rem; }
+  .footer-inner { display: block; }
+  .footer-inner &gt; * { display: block; margin-top: 0.4rem; }
+}
+
+/* Respect reduced-motion preferences; do not force animated scrolling. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* A useful print version also exposes the project briefs. */
+@media print {
+  body { color: #000; background-color: #fff; }
+  .container { width: 100%; }
+  .hero { padding-top: 1rem; padding-bottom: 2rem; }
+  .site-header nav, .hero-actions, .skip-link, .closing-note, .site-footer a { display: none; }
+  .projects-grid, .project-featured, .hero, .about-grid { display: block; }
+  .project { margin-bottom: 1.5rem; break-inside: avoid; }
+  .project-figure { max-width: 22rem; }
+  .project-details .details-content { display: block; }
+  .design-note { margin-top: 1.5rem; }
+}
+
+&lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- The skip link is the first keyboard stop on the page. --&gt;
+    &lt;a class=&quot;skip-link&quot; href=&quot;#main&quot;&gt;Skip to main content&lt;/a&gt;
+
+    &lt;header class=&quot;site-header&quot; id=&quot;top&quot;&gt;
+      &lt;div class=&quot;container header-inner&quot;&gt;
+        &lt;a class=&quot;wordmark&quot; href=&quot;#top&quot; aria-label=&quot;Kexin Chen, back to top&quot;&gt;
+          &lt;span class=&quot;monogram&quot; aria-hidden=&quot;true&quot;&gt;kc.&lt;/span&gt;
+          &lt;span&gt;Kexin Chen&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;nav aria-label=&quot;Main navigation&quot;&gt;
+          &lt;ul class=&quot;nav-list&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#work&quot;&gt;Work&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#focus&quot;&gt;Focus&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;main id=&quot;main&quot; tabindex=&quot;-1&quot;&gt;
+      &lt;section class=&quot;hero container&quot; aria-labelledby=&quot;hero-title&quot;&gt;
+        &lt;div class=&quot;hero-copy&quot;&gt;
+          &lt;p class=&quot;eyebrow&quot;&gt;Informatics at UC Irvine &lt;span aria-hidden=&quot;true&quot;&gt;/&lt;/span&gt; HCI &amp;amp; UX&lt;/p&gt;
+          &lt;h1 id=&quot;hero-title&quot;&gt;Thoughtful interfaces.&lt;br&gt;&lt;em&gt;Everyday impact.&lt;/em&gt;&lt;/h1&gt;
+          &lt;p class=&quot;hero-intro&quot;&gt;Hi, I'm Kexin. I explore how technology can make everyday experiences feel clearer, safer, and more connected.&lt;/p&gt;
+          &lt;div class=&quot;hero-actions&quot;&gt;
+            &lt;a class=&quot;button button-primary&quot; href=&quot;#work&quot;&gt;Explore my work &lt;span aria-hidden=&quot;true&quot;&gt;&amp;darr;&lt;/span&gt;&lt;/a&gt;
+            &lt;a class=&quot;text-link&quot; href=&quot;#about&quot;&gt;A little about me &lt;span aria-hidden=&quot;true&quot;&gt;&amp;nearr;&lt;/span&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;p class=&quot;location&quot;&gt;&lt;span class=&quot;location-dot&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Based in Irvine, California&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;aside class=&quot;design-note&quot; aria-labelledby=&quot;lens-title&quot;&gt;
+          &lt;div class=&quot;note-topline&quot;&gt;&lt;span class=&quot;eyebrow&quot;&gt;A few things I care about&lt;/span&gt;&lt;span class=&quot;note-star&quot; aria-hidden=&quot;true&quot;&gt;✳&lt;/span&gt;&lt;/div&gt;
+          &lt;h2 id=&quot;lens-title&quot;&gt;The person&lt;br&gt;behind the screen.&lt;/h2&gt;
+          &lt;ol class=&quot;lens-list&quot;&gt;
+            &lt;li&gt;&lt;span class=&quot;lens-number&quot; aria-hidden=&quot;true&quot;&gt;01&lt;/span&gt;&lt;span&gt;Understand the context.&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;span class=&quot;lens-number&quot; aria-hidden=&quot;true&quot;&gt;02&lt;/span&gt;&lt;span&gt;Make choices clear.&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;span class=&quot;lens-number&quot; aria-hidden=&quot;true&quot;&gt;03&lt;/span&gt;&lt;span&gt;Design with care.&lt;/span&gt;&lt;/li&gt;
+          &lt;/ol&gt;
+          &lt;p class=&quot;note-foot&quot;&gt;Curious about people.&lt;br&gt;Intentional about interaction.&lt;/p&gt;
+        &lt;/aside&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;work-section container&quot; id=&quot;work&quot; aria-labelledby=&quot;work-title&quot;&gt;
+        &lt;div class=&quot;section-heading&quot;&gt;
+          &lt;div&gt;&lt;p class=&quot;eyebrow&quot;&gt;01 / Selected work&lt;/p&gt;&lt;h2 id=&quot;work-title&quot;&gt;From a need to an idea.&lt;/h2&gt;&lt;/div&gt;
+          &lt;p&gt;Course projects exploring housing,&lt;br class=&quot;desktop-break&quot;&gt; safety, and play.&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;projects-grid&quot;&gt;
+          &lt;!-- Covers are original portfolio illustrations, not product screenshots. --&gt;
+          &lt;article class=&quot;project project-featured&quot; aria-labelledby=&quot;zotrent-title&quot;&gt;
+            &lt;figure class=&quot;project-figure cover-housing&quot;&gt;
+              &lt;img src=&quot;images/zotrent.svg&quot; width=&quot;800&quot; height=&quot;560&quot; alt=&quot;ZOTrent concept: a rental home connected with compatible roommates.&quot;&gt;
+              &lt;figcaption&gt;Portfolio illustration&lt;/figcaption&gt;
+            &lt;/figure&gt;
+            &lt;div class=&quot;project-copy&quot;&gt;
+              &lt;p class=&quot;project-kicker&quot;&gt;01 &lt;span aria-hidden=&quot;true&quot;&gt;/&lt;/span&gt; Housing &amp;amp; community&lt;/p&gt;
+              &lt;h3 id=&quot;zotrent-title&quot;&gt;ZOTrent&lt;/h3&gt;
+              &lt;p class=&quot;project-subtitle&quot;&gt;Finding a place. Finding your people.&lt;/p&gt;
+              &lt;p&gt;A course project exploring rental housing and roommate matching for UCI students, with particular attention to the challenges international students face.&lt;/p&gt;
+              &lt;ul class=&quot;tags&quot; aria-label=&quot;ZOTrent topics&quot;&gt;&lt;li&gt;Student housing&lt;/li&gt;&lt;li&gt;Roommate matching&lt;/li&gt;&lt;li&gt;UX design&lt;/li&gt;&lt;/ul&gt;
+              &lt;details class=&quot;project-details&quot;&gt;
+                &lt;summary&gt;Explore the ZOTrent project brief&lt;/summary&gt;
+                &lt;div class=&quot;details-content&quot;&gt;
+                  &lt;h4&gt;The context&lt;/h4&gt;
+                  &lt;p&gt;Finding housing also means making decisions about location, cost, and who to live with. International students may be navigating an unfamiliar rental process.&lt;/p&gt;
+                  &lt;h4&gt;The concept&lt;/h4&gt;
+                  &lt;p&gt;Bring rental listings and roommate matching into a student-focused experience, with UCI email registration as part of the concept.&lt;/p&gt;
+                  &lt;h4&gt;A design question&lt;/h4&gt;
+                  &lt;p&gt;How can an interface help students compare both a place to live and the people they might share it with?&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/div&gt;
+          &lt;/article&gt;
+
+          &lt;article class=&quot;project&quot; aria-labelledby=&quot;safety-title&quot;&gt;
+            &lt;figure class=&quot;project-figure cover-safety&quot;&gt;
+              &lt;img src=&quot;images/chat-safety.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Chat safety concept: conversation bubbles, a shield, and a moderation panel.&quot;&gt;
+              &lt;figcaption&gt;Portfolio illustration&lt;/figcaption&gt;
+            &lt;/figure&gt;
+            &lt;div class=&quot;project-copy&quot;&gt;
+              &lt;p class=&quot;project-kicker&quot;&gt;02 &lt;span aria-hidden=&quot;true&quot;&gt;/&lt;/span&gt; Safety &amp;amp; communication&lt;/p&gt;
+              &lt;h3 id=&quot;safety-title&quot;&gt;Safer conversations&lt;/h3&gt;
+              &lt;p class=&quot;project-subtitle&quot;&gt;A children's chat safety concept.&lt;/p&gt;
+              &lt;p&gt;A design studio project considering children, parents, and moderators as different stakeholders in a safer online chat experience.&lt;/p&gt;
+              &lt;ul class=&quot;tags&quot; aria-label=&quot;Chat safety topics&quot;&gt;&lt;li&gt;Interaction design&lt;/li&gt;&lt;li&gt;Moderation&lt;/li&gt;&lt;li&gt;Mobile UI&lt;/li&gt;&lt;/ul&gt;
+              &lt;details class=&quot;project-details&quot;&gt;
+                &lt;summary&gt;Explore the chat safety project brief&lt;/summary&gt;
+                &lt;div class=&quot;details-content&quot;&gt;
+                  &lt;h4&gt;The stakeholders&lt;/h4&gt;
+                  &lt;p&gt;Children need understandable interactions; parents and moderators have different responsibilities when a concern is reported.&lt;/p&gt;
+                  &lt;h4&gt;The design focus&lt;/h4&gt;
+                  &lt;p&gt;Explore mobile interfaces, moderation filters, and report details that make the relevant information easier to find.&lt;/p&gt;
+                  &lt;h4&gt;A design question&lt;/h4&gt;
+                  &lt;p&gt;How can safety controls feel understandable to a child while giving a moderator enough context to review a report?&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/div&gt;
+          &lt;/article&gt;
+
+          &lt;article class=&quot;project&quot; aria-labelledby=&quot;gaming-title&quot;&gt;
+            &lt;figure class=&quot;project-figure cover-gaming&quot;&gt;
+              &lt;img src=&quot;images/gaming-companion.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Gaming companion concept: a controller and a voice guidance waveform.&quot;&gt;
+              &lt;figcaption&gt;Portfolio illustration&lt;/figcaption&gt;
+            &lt;/figure&gt;
+            &lt;div class=&quot;project-copy&quot;&gt;
+              &lt;p class=&quot;project-kicker&quot;&gt;03 &lt;span aria-hidden=&quot;true&quot;&gt;/&lt;/span&gt; AI &amp;amp; play&lt;/p&gt;
+              &lt;h3 id=&quot;gaming-title&quot;&gt;AI Gaming Companion&lt;/h3&gt;
+              &lt;p class=&quot;project-subtitle&quot;&gt;Guidance in the flow of play.&lt;/p&gt;
+              &lt;p&gt;A game design project exploring real-time voice guidance as a way to support players without asking them to look away from their game.&lt;/p&gt;
+              &lt;ul class=&quot;tags&quot; aria-label=&quot;Gaming companion topics&quot;&gt;&lt;li&gt;Voice interaction&lt;/li&gt;&lt;li&gt;AI concepts&lt;/li&gt;&lt;li&gt;Game experience&lt;/li&gt;&lt;/ul&gt;
+              &lt;details class=&quot;project-details&quot;&gt;
+                &lt;summary&gt;Explore the gaming companion project brief&lt;/summary&gt;
+                &lt;div class=&quot;details-content&quot;&gt;
+                  &lt;h4&gt;The context&lt;/h4&gt;
+                  &lt;p&gt;During a game, attention is already divided between the action on screen and the decisions a player needs to make.&lt;/p&gt;
+                  &lt;h4&gt;The concept&lt;/h4&gt;
+                  &lt;p&gt;Explore an AI companion that offers voice-based tips in real time, with the experience centered on how help fits into play.&lt;/p&gt;
+                  &lt;h4&gt;A design question&lt;/h4&gt;
+                  &lt;p&gt;When is a tip helpful, and when does it become an interruption?&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/details&gt;
+            &lt;/div&gt;
+          &lt;/article&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;about-section&quot; id=&quot;about&quot; aria-labelledby=&quot;about-title&quot;&gt;
+        &lt;div class=&quot;container about-grid&quot;&gt;
+          &lt;div class=&quot;about-title&quot;&gt;&lt;p class=&quot;eyebrow&quot;&gt;02 / A little about me&lt;/p&gt;&lt;h2 id=&quot;about-title&quot;&gt;People first.&lt;br&gt;&lt;em&gt;Curiosity always.&lt;/em&gt;&lt;/h2&gt;&lt;/div&gt;
+          &lt;div class=&quot;about-copy&quot;&gt;
+            &lt;p&gt;I'm Kexin Chen, an undergraduate studying Informatics at the University of California, Irvine. My interests sit at the intersection of human-computer interaction, UX design, and emerging technology.&lt;/p&gt;
+            &lt;p&gt;I'm drawn to everyday problems where a small interaction can make a meaningful difference: finding a roommate, understanding a safety concern, or getting help at the right moment.&lt;/p&gt;
+            &lt;p&gt;I'm also interested in exploring AI, games, and physical interaction as I continue developing my design practice.&lt;/p&gt;
+            &lt;a class=&quot;text-link&quot; href=&quot;https://www.informatics.uci.edu/&quot;&gt;Explore Informatics at UCI &lt;span aria-hidden=&quot;true&quot;&gt;&amp;nearr;&lt;/span&gt;&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;focus-section container&quot; id=&quot;focus&quot; aria-labelledby=&quot;focus-title&quot;&gt;
+        &lt;div class=&quot;section-heading&quot;&gt;&lt;div&gt;&lt;p class=&quot;eyebrow&quot;&gt;03 / What I'm exploring&lt;/p&gt;&lt;h2 id=&quot;focus-title&quot;&gt;A growing design practice.&lt;/h2&gt;&lt;/div&gt;&lt;p&gt;Areas I'm interested in&lt;br class=&quot;desktop-break&quot;&gt; developing further.&lt;/p&gt;&lt;/div&gt;
+        &lt;!-- This is a real data table, with a caption and scoped row/column headers. --&gt;
+        &lt;div class=&quot;table-wrapper&quot;&gt;
+          &lt;table class=&quot;focus-table&quot;&gt;
+            &lt;caption&gt;Design interests and the questions behind them&lt;/caption&gt;
+            &lt;thead&gt;&lt;tr&gt;&lt;th scope=&quot;col&quot; id=&quot;area-header&quot;&gt;Area&lt;/th&gt;&lt;th scope=&quot;col&quot; id=&quot;question-header&quot;&gt;A question I care about&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;&lt;th scope=&quot;row&quot; id=&quot;hci-row&quot; headers=&quot;area-header&quot;&gt;Human-computer interaction&lt;/th&gt;&lt;td headers=&quot;hci-row question-header&quot;&gt;How can technology fit people's needs, context, and abilities?&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;th scope=&quot;row&quot; id=&quot;ux-row&quot; headers=&quot;area-header&quot;&gt;UX &amp;amp; interaction design&lt;/th&gt;&lt;td headers=&quot;ux-row question-header&quot;&gt;How can an interface make the next step feel understandable?&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;th scope=&quot;row&quot; id=&quot;ai-row&quot; headers=&quot;area-header&quot;&gt;AI &amp;amp; playful experiences&lt;/th&gt;&lt;td headers=&quot;ai-row question-header&quot;&gt;How can assistance support an experience without taking it over?&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;closing-note&quot;&gt;&lt;p&gt;Good design starts with paying attention.&lt;/p&gt;&lt;a class=&quot;text-link&quot; href=&quot;#work&quot;&gt;Revisit the projects &lt;span aria-hidden=&quot;true&quot;&gt;&amp;uarr;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer class=&quot;site-footer&quot;&gt;&lt;div class=&quot;container footer-inner&quot;&gt;&lt;p&gt;&amp;copy; 2026 Kexin Chen&lt;/p&gt;&lt;p&gt;Made with curiosity, HTML, and CSS.&lt;/p&gt;&lt;a href=&quot;#top&quot;&gt;Back to top &lt;span aria-hidden=&quot;true&quot;&gt;&amp;uarr;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+
+				<div class="validation_submit_div">
+					<div class="spinner_div">
+						<img class="spinner_img" id="AC_spinner_by_paste" style="display:none" src="https://achecks.org/themes/default/images/spinner.gif" alt="Accessibility Validation in Progress" />
+						&nbsp;
+					</div>
+					<input class="validation_button" type="submit" name="validate_paste" id="validate_paste" value="Check It" onclick="return AChecker.input.validatePaste();" />
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<h2 align="left">
+				<img src="images/arrow-closed.png" alt="Expand Guidelines" title="Expand Guidelines" id="toggle_image" border="0" />
+				<a href="javascript:AChecker.toggleDiv('div_options', 'toggle_image');">Options</a>
+			</h2>
+		</div>
+
+		<div id="div_options" style="display:none">
+
+		<table class="data static" style="background-colour:#eeeeee;">
+			<tr>
+				<td class="one_third_width">
+				<input type="checkbox" name="enable_html_validation" id="enable_html_validation" value="1"  />
+				<label for='enable_html_validation'>Enable HTML Validator</label>
+				</td>
+
+				<td class="one_third_width">
+				<input type="checkbox" name="enable_css_validation" id="enable_css_validation" value="1"  />
+				<label for='enable_css_validation'>Enable CSS Validator</label>
+				</td>
+
+				<td class="one_third_width">
+				<input type="checkbox" name="show_source" id="show_source" value="1"  />
+				<label for='show_source'>Show Source</label>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td colspan="3"><h3>Guidelines to Check Against</h3></td>
+			</tr>
+<!--
+			<tr>
+				<td>
+					<input type="checkbox" name="gid[]" id='gid_1' value='1'  />
+					<label for='gid_1'>BITV 1.0 (Level 2)</label>
+				</td>
+				<td>
+					<input type="checkbox" name="gid[]" id='gid_2' value='2'  />
+					<label for='gid_2'>Section 508</label>
+				</td>
+				<td>
+					<input type="checkbox" name="gid[]" id='gid_3' value='3'  />
+					<label for='gid_3'>Stanca Act</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="gid[]" id='gid_4' value='4'  />
+					<label for='gid_4'>WCAG 1.0 (Level A)</label>
+				</td>
+				<td>
+					<input type="checkbox" name="gid[]" id='gid_5' value='5'  />
+					<label for='gid_5'>WCAG 1.0 (Level AA)</label>
+				</td>
+				<td>
+					<input type="checkbox" name="gid[]" id='gid_6' value='6'  />
+					<label for='gid_6'>WCAG 1.0 (Level AAA)</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="gid[]" id='gid_7' value='7'  />
+					<label for='gid_7'>WCAG 2.0 (Level A)</label>
+				</td>
+				<td>
+					<input type="checkbox" name="gid[]" id='gid_8' value='8'  />
+					<label for='gid_8'>WCAG 2.0 (Level AA)</label>
+				</td>
+				<td>
+					<input type="checkbox" name="gid[]" id='gid_9' value='9'  />
+					<label for='gid_9'>WCAG 2.0 (Level AAA)</label>
+				</td>
+			</tr>
+ -->
+			<tr>
+			<td colspan="3">
+				<div id="guideline_in_radio">
+				<table width="100%">
+					<tr>
+						<td class="one_third_width">
+							<input type="radio" name="radio_gid[]" id="radio_gid_1" value="1" />
+							<label for="radio_gid_1">BITV 1.0 (Level 2)</label>
+						</td>
+						<td class="one_third_width">
+							<input type="radio" name="radio_gid[]" id="radio_gid_2" value="2" />
+							<label for="radio_gid_2">Section 508</label>
+						</td>
+						<td class="one_third_width">
+							<input type="radio" name="radio_gid[]" id="radio_gid_3" value="3" />
+							<label for="radio_gid_3">Stanca Act</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="one_third_width">
+							<input type="radio" name="radio_gid[]" id="radio_gid_4" value="4" />
+							<label for="radio_gid_4">WCAG 1.0 (Level A)</label>
+						</td>
+						<td class="one_third_width">
+							<input type="radio" name="radio_gid[]" id="radio_gid_5" value="5" />
+							<label for="radio_gid_5">WCAG 1.0 (Level AA)</label>
+						</td>
+						<td class="one_third_width">
+							<input type="radio" name="radio_gid[]" id="radio_gid_6" value="6" />
+							<label for="radio_gid_6">WCAG 1.0 (Level AAA)</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="one_third_width">
+							<input type="radio" name="radio_gid[]" id="radio_gid_7" value="7" />
+							<label for="radio_gid_7">WCAG 2.0 (Level A)</label>
+						</td>
+						<td class="one_third_width">
+							<input type="radio" name="radio_gid[]" id="radio_gid_8" value="8" checked="checked" />
+							<label for="radio_gid_8">WCAG 2.0 (Level AA)</label>
+						</td>
+						<td class="one_third_width">
+							<input type="radio" name="radio_gid[]" id="radio_gid_9" value="9" />
+							<label for="radio_gid_9">WCAG 2.0 (Level AAA)</label>
+						</td>
+					</tr>
+				</table>
+			</div>
+				<div id="guideline_in_checkbox" style="display:none">
+				<table width="100%">
+					<tr>
+						<td class="one_third_width">
+							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_1" value="1" />
+							<label for="checkbox_gid_1">BITV 1.0 (Level 2)</label>
+						</td>
+						<td class="one_third_width">
+							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_2" value="2" />
+							<label for="checkbox_gid_2">Section 508</label>
+						</td>
+						<td class="one_third_width">
+							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_3" value="3" />
+							<label for="checkbox_gid_3">Stanca Act</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="one_third_width">
+							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_4" value="4" />
+							<label for="checkbox_gid_4">WCAG 1.0 (Level A)</label>
+						</td>
+						<td class="one_third_width">
+							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_5" value="5" />
+							<label for="checkbox_gid_5">WCAG 1.0 (Level AA)</label>
+						</td>
+						<td class="one_third_width">
+							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_6" value="6" />
+							<label for="checkbox_gid_6">WCAG 1.0 (Level AAA)</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="one_third_width">
+							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_7" value="7" />
+							<label for="checkbox_gid_7">WCAG 2.0 (Level A)</label>
+						</td>
+						<td class="one_third_width">
+							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_8" value="8" checked="checked" />
+							<label for="checkbox_gid_8">WCAG 2.0 (Level AA)</label>
+						</td>
+						<td class="one_third_width">
+							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_9" value="9" />
+							<label for="checkbox_gid_9">WCAG 2.0 (Level AAA)</label>
+						</td>
+					</tr>
+				</table>
+			</div>
+			</td>
+			</tr>
+
+			<tr>
+				<td colspan="3"><h3>Report Format</h3></td>
+			</tr>
+			<tr>
+				<td class="one_third_width"><input type="radio" name="rpt_format" value="1" id="option_rpt_gdl" checked="checked" /><label for="option_rpt_gdl">View by Guideline</label></td>
+				<td class="one_third_width"><input type="radio" name="rpt_format" value="2" id="option_rpt_line"  /><label for="option_rpt_line">View by Line Number</label></td>
+			</tr>
+		</table>
+		</div>
+	</fieldset>
+	</div>
+</form>
+
+</div>
+</td>
+</tr>
+</table>
+<div id="AC_seals_div" class="validator-output-form">
+
+</div>
+
+<div id="output_div" >
+
+
+	<div class="center-input-form">
+	<a name="report" title="Start Report"></a>
+	<fieldset class="group_form"><legend class="group_form">Accessibility Review</legend>
+	<h3>Accessibility Review (Guidelines: <a title="WCAG 2.0 (Level AA)(link opens in a new window)" target="_new" href="https://achecks.org/guideline/view_guideline.php?id=8">WCAG 2.0 (Level AA)</a>)</h3>
+
+	<div class="center">
+		<form name="file_form" enctype="multipart/form-data" method="post" >
+
+		<fieldset id="report_file" style="display:none;"><legend class="report_file">Export Report</legend>
+			<div style="padding: 0.5em;">
+				<label for="file_type">Export Format:</label>
+				<select name="file_menu" id="fileselect">
+					<option value="pdf" selected="selected">PDF</option>
+					<option value="earl">EARL</option>
+					<option value="csv">CSV</option>
+					<option value="html">HTML</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;
+			
+				&nbsp;&nbsp;<label for="problem_type">Report to Export:</label>
+				<select name="problem_menu" id="problemselect">
+					<option value="all" selected="selected">All</option>
+					<option value="known" >Known</option>
+					<option value="likely">Likely</option>
+					<option value="potential">Potential</option>
+					<option value="html">HTML Validation</option>
+					<option value="css">CSS Validation</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<iframe id="downloadFrame" src="" style="display:none;"></iframe>
+				<input class="report_file_button" type="button" name="validate_export" id="validate_file_button" value="Get File" onclick="return AChecker.input.validateFile('spinner_export');" />
+				<div class="spinner_div">
+					<img class="spinner_img" id="spinner_export" style="display:none" src="https://achecks.org/themes/default/images/spinner.gif" alt="Accessibility Validation in Progress" />
+					&nbsp;
+				</div>
+			</div>
+		</fieldset>
+	
+		</form>
+	</div>
+
+	<div class="topnavlistcontainer"><br />
+		<ul class="navigation">
+			<li class="navigation"><a href="javascript:void(0);" accesskey="1" title="Known Problems Alt+1" id="AC_menu_errors" onclick="AChecker.output.onClickTab('AC_errors');"><span class="nav">Known Problems(<span id="AC_num_of_errors">0</span>)</span></a></li>
+
+			<li class="navigation"><a href="javascript:void(0);" accesskey="2" title="Likely Problems Alt+2" id="AC_menu_likely_problems" onclick="AChecker.output.onClickTab('AC_likely_problems');"><span class="nav">Likely Problems (<span id="AC_num_of_likely">0</span>)</span></a></li>
+
+			<li class="navigation"><a href="javascript:void(0);" accesskey="3" title="Potential Problems Alt+3" id="AC_menu_potential_problems" onclick="AChecker.output.onClickTab('AC_potential_problems');"><span class="nav">Potential Problems (<span id="AC_num_of_potential">61</span>)</span></a></li>
+
+			<li class="navigation"><a href="javascript:void(0);" accesskey="4" title="HTML Validation Alt+4" id="AC_menu_html_validation_result" onclick="AChecker.output.onClickTab('AC_html_validation_result');"><span class="nav">HTML Validation </span></a></li>
+
+			<li class="navigation"><a href="javascript:void(0);" accesskey="5" title="CSS Validation Alt+5" id="AC_menu_css_validation_result" onclick="AChecker.output.onClickTab('AC_css_validation_result');"><span class="nav">CSS Validation </span></a></li>
+		</ul>
+	</div>
+
+	<div id="AC_errors">
+	<br />
+	<span id='AC_congrats_msg_for_errors' class='congrats_msg'>
+<img src='https://achecks.org/images/feedback.gif' alt='Feedback' />  Congratulations! No known problems.	</span>
+	</div>
+
+	<div id="AC_likely_problems" style="display:none;">
+	<br />
+	<span id="AC_congrats_msg_for_likely" class='congrats_msg'>
+<img src="https://achecks.org/images/feedback.gif" alt="Feedback" />  Congratulations! No likely problems.	</span>
+	</div>
+
+	<div id="AC_potential_problems" style="margin-top:1em; display:none;">
+	<br />
+	<span id="AC_congrats_msg_for_potential" >
+	</span>
+<h3>1.1 Text Alternatives: Provide text alternatives for any non-text content</h3><br/>
+<h4>Success Criteria 1.1.1 Non-text Content (A)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 178:
+              <a href="https://achecks.org/checker/suggestion.php?id=178"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=178'); return false;"
+                 target="_new">Alt text does not convey the same information as the image.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_224" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_268_15_178" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 268, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/zotrent.svg&quot; width=&quot;800&quot; height=&quot;560&quot; alt=&quot;ZOTrent concept: a rental home connected ...</code></pre>
+         <img src="images/zotrent.svg" height="50" border="1" alt="ZOTrent concept: a rental home connected with compatible roommates." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_293_15_178" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 293, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/chat-safety.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Chat safety concept:  ...</code></pre>
+         <img src="images/chat-safety.svg" height="50" border="1" alt="Chat safety concept: conversation bubbles, a shield, and a moderation panel." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_318_15_178" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 318, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/gaming-companion.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Gaming companion ...</code></pre>
+         <img src="images/gaming-companion.svg" height="50" border="1" alt="Gaming companion concept: a controller and a voice guidance waveform." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 16:
+              <a href="https://achecks.org/checker/suggestion.php?id=16"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=16'); return false;"
+                 target="_new">Alt text is not empty and image may be decorative.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_224" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_268_15_16" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 268, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/zotrent.svg&quot; width=&quot;800&quot; height=&quot;560&quot; alt=&quot;ZOTrent concept: a rental home connected ...</code></pre>
+         <img src="images/zotrent.svg" height="50" border="1" alt="ZOTrent concept: a rental home connected with compatible roommates." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_293_15_16" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 293, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/chat-safety.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Chat safety concept:  ...</code></pre>
+         <img src="images/chat-safety.svg" height="50" border="1" alt="Chat safety concept: conversation bubbles, a shield, and a moderation panel." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_318_15_16" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 318, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/gaming-companion.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Gaming companion ...</code></pre>
+         <img src="images/gaming-companion.svg" height="50" border="1" alt="Gaming companion concept: a controller and a voice guidance waveform." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 8:
+              <a href="https://achecks.org/checker/suggestion.php?id=8"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=8'); return false;"
+                 target="_new"><code>img</code> element may require a long description.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_224" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_268_15_8" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 268, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/zotrent.svg&quot; width=&quot;800&quot; height=&quot;560&quot; alt=&quot;ZOTrent concept: a rental home connected ...</code></pre>
+         <img src="images/zotrent.svg" height="50" border="1" alt="ZOTrent concept: a rental home connected with compatible roommates." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_293_15_8" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 293, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/chat-safety.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Chat safety concept:  ...</code></pre>
+         <img src="images/chat-safety.svg" height="50" border="1" alt="Chat safety concept: conversation bubbles, a shield, and a moderation panel." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_318_15_8" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 318, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/gaming-companion.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Gaming companion ...</code></pre>
+         <img src="images/gaming-companion.svg" height="50" border="1" alt="Gaming companion concept: a controller and a voice guidance waveform." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+<h3>1.3  Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.</h3><br/>
+<h4>Success Criteria 1.3.1 Info and Relationships (A)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 271:
+              <a href="https://achecks.org/checker/suggestion.php?id=271"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=271'); return false;"
+                 target="_new"><code>dir</code> attribute may be required to identify changes in text direction.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_227" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_213_3_271" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 213, Column 3</em>:
+         <pre><code class="input">&lt;body&gt;
+    &lt;!-- The skip link is the first keyboard stop on the page. --&gt;
+    &lt;a class=&quot;skip-link&quot; h ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 270:
+              <a href="https://achecks.org/checker/suggestion.php?id=270"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=270'); return false;"
+                 target="_new">Unicode right-to-left marks or left-to-right marks may be required.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_227" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_213_3_270" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 213, Column 3</em>:
+         <pre><code class="input">&lt;body&gt;
+    &lt;!-- The skip link is the first keyboard stop on the page. --&gt;
+    &lt;a class=&quot;skip-link&quot; h ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 248:
+              <a href="https://achecks.org/checker/suggestion.php?id=248"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=248'); return false;"
+                 target="_new">Visual lists may not be properly marked.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_227" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_213_3_248" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 213, Column 3</em>:
+         <pre><code class="input">&lt;body&gt;
+    &lt;!-- The skip link is the first keyboard stop on the page. --&gt;
+    &lt;a class=&quot;skip-link&quot; h ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 242:
+              <a href="https://achecks.org/checker/suggestion.php?id=242"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=242'); return false;"
+                 target="_new">Table caption may not identify the table.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_227" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_360_13_242" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 360, Column 13</em>:
+         <pre><code class="input">&lt;caption&gt;Design interests and the questions behind them&lt;/caption&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 111:
+              <a href="https://achecks.org/checker/suggestion.php?id=111"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=111'); return false;"
+                 target="_new">Table may require a summary.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_227" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_359_11_111" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 359, Column 11</em>:
+         <pre><code class="input">&lt;table class=&quot;focus-table&quot;&gt;
+            &lt;caption&gt;Design interests and the questions behind them&lt;/cap ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 231:
+              <a href="https://achecks.org/checker/suggestion.php?id=231"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=231'); return false;"
+                 target="_new">Table may require <code>colgroup</code> and <code>col</code> elements to group table columns.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_227" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_359_11_231" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 359, Column 11</em>:
+         <pre><code class="input">&lt;table class=&quot;focus-table&quot;&gt;
+            &lt;caption&gt;Design interests and the questions behind them&lt;/cap ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 230:
+              <a href="https://achecks.org/checker/suggestion.php?id=230"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=230'); return false;"
+                 target="_new">Table may require <code>thead</code>, <code>tfoot</code> and <code>tbody</code> elements to group repeated table row structures.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_227" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_359_11_230" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 359, Column 11</em>:
+         <pre><code class="input">&lt;table class=&quot;focus-table&quot;&gt;
+            &lt;caption&gt;Design interests and the questions behind them&lt;/cap ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 137:
+              <a href="https://achecks.org/checker/suggestion.php?id=137"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=137'); return false;"
+                 target="_new">Layout <code>table</code> may be misusing <code>th</code> elements.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_227" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_359_11_137" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 359, Column 11</em>:
+         <pre><code class="input">&lt;table class=&quot;focus-table&quot;&gt;
+            &lt;caption&gt;Design interests and the questions behind them&lt;/cap ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+<h4>Success Criteria 1.3.3 Sensory Characteristics (A)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 250:
+              <a href="https://achecks.org/checker/suggestion.php?id=250"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=250'); return false;"
+                 target="_new">Text may refer to items by shape, size, or relative position alone.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_229" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_213_3_250" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 213, Column 3</em>:
+         <pre><code class="input">&lt;body&gt;
+    &lt;!-- The skip link is the first keyboard stop on the page. --&gt;
+    &lt;a class=&quot;skip-link&quot; h ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+<h3>1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.</h3><br/>
+<h4>Success Criteria 1.4.1 Use of Color (A)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 14:
+              <a href="https://achecks.org/checker/suggestion.php?id=14"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=14'); return false;"
+                 target="_new">Image may be using color alone.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_358" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_268_15_14" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 268, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/zotrent.svg&quot; width=&quot;800&quot; height=&quot;560&quot; alt=&quot;ZOTrent concept: a rental home connected ...</code></pre>
+         <img src="images/zotrent.svg" height="50" border="1" alt="ZOTrent concept: a rental home connected with compatible roommates." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_293_15_14" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 293, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/chat-safety.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Chat safety concept:  ...</code></pre>
+         <img src="images/chat-safety.svg" height="50" border="1" alt="Chat safety concept: conversation bubbles, a shield, and a moderation panel." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_318_15_14" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 318, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/gaming-companion.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Gaming companion ...</code></pre>
+         <img src="images/gaming-companion.svg" height="50" border="1" alt="Gaming companion concept: a controller and a voice guidance waveform." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 251:
+              <a href="https://achecks.org/checker/suggestion.php?id=251"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=251'); return false;"
+                 target="_new">Image may contain text with poor contrast.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_358" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_268_15_251" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 268, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/zotrent.svg&quot; width=&quot;800&quot; height=&quot;560&quot; alt=&quot;ZOTrent concept: a rental home connected ...</code></pre>
+         <img src="images/zotrent.svg" height="50" border="1" alt="ZOTrent concept: a rental home connected with compatible roommates." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_293_15_251" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 293, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/chat-safety.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Chat safety concept:  ...</code></pre>
+         <img src="images/chat-safety.svg" height="50" border="1" alt="Chat safety concept: conversation bubbles, a shield, and a moderation panel." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_318_15_251" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 318, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/gaming-companion.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Gaming companion ...</code></pre>
+         <img src="images/gaming-companion.svg" height="50" border="1" alt="Gaming companion concept: a controller and a voice guidance waveform." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+<h4>Success Criteria 1.4.5 Images of Text (AA)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 11:
+              <a href="https://achecks.org/checker/suggestion.php?id=11"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=11'); return false;"
+                 target="_new">Image may contain text that is not in Alt text.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_362" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_268_15_11" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 268, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/zotrent.svg&quot; width=&quot;800&quot; height=&quot;560&quot; alt=&quot;ZOTrent concept: a rental home connected ...</code></pre>
+         <img src="images/zotrent.svg" height="50" border="1" alt="ZOTrent concept: a rental home connected with compatible roommates." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_293_15_11" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 293, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/chat-safety.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Chat safety concept:  ...</code></pre>
+         <img src="images/chat-safety.svg" height="50" border="1" alt="Chat safety concept: conversation bubbles, a shield, and a moderation panel." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_318_15_11" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 318, Column 15</em>:
+         <pre><code class="input">&lt;img src=&quot;images/gaming-companion.svg&quot; width=&quot;800&quot; height=&quot;560&quot; loading=&quot;lazy&quot; alt=&quot;Gaming companion ...</code></pre>
+         <img src="images/gaming-companion.svg" height="50" border="1" alt="Gaming companion concept: a controller and a voice guidance waveform." />
+
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+<h3>2.4  Navigable: Provide ways to help users navigate, find content, and determine where they are.</h3><br/>
+<h4>Success Criteria 2.4.1 Bypass Blocks (A)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 28:
+              <a href="https://achecks.org/checker/suggestion.php?id=28"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=28'); return false;"
+                 target="_new">Document may be missing a "skip to content" link.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_234" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_213_3_28" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 213, Column 3</em>:
+         <pre><code class="input">&lt;body&gt;
+    &lt;!-- The skip link is the first keyboard stop on the page. --&gt;
+    &lt;a class=&quot;skip-link&quot; h ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 262:
+              <a href="https://achecks.org/checker/suggestion.php?id=262"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=262'); return false;"
+                 target="_new">Groups of links with a related purpose are not marked.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_234" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_213_3_262" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 213, Column 3</em>:
+         <pre><code class="input">&lt;body&gt;
+    &lt;!-- The skip link is the first keyboard stop on the page. --&gt;
+    &lt;a class=&quot;skip-link&quot; h ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+<h4>Success Criteria 2.4.2 Page Titled (A)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 54:
+              <a href="https://achecks.org/checker/suggestion.php?id=54"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=54'); return false;"
+                 target="_new"><code>title</code> might not describe the document.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_365" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_8_5_54" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 8, Column 5</em>:
+         <pre><code class="input">&lt;title&gt;Kexin Chen | HCI &amp;amp; UX Portfolio&lt;/title&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+<h4>Success Criteria 2.4.4 Link Purpose (In Context) (A)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 19:
+              <a href="https://achecks.org/checker/suggestion.php?id=19"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=19'); return false;"
+                 target="_new">Link text may not be meaningful.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_367" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_215_5_19" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 215, Column 5</em>:
+         <pre><code class="input">&lt;a class=&quot;skip-link&quot; href=&quot;#main&quot;&gt;Skip to main content&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_219_9_19" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 219, Column 9</em>:
+         <pre><code class="input">&lt;a class=&quot;wordmark&quot; href=&quot;#top&quot; aria-label=&quot;Kexin Chen, back to top&quot;&gt;
+          &lt;span class=&quot;monogra ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_225_17_19" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 225, Column 17</em>:
+         <pre><code class="input">&lt;a href=&quot;#work&quot;&gt;Work&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_226_17_19" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 226, Column 17</em>:
+         <pre><code class="input">&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_227_17_19" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 227, Column 17</em>:
+         <pre><code class="input">&lt;a href=&quot;#focus&quot;&gt;Focus&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_240_13_19" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 240, Column 13</em>:
+         <pre><code class="input">&lt;a class=&quot;button button-primary&quot; href=&quot;#work&quot;&gt;Explore my work &lt;span aria-hidden=&quot;true&quot;&gt;&amp;darr;&lt;/span&gt; ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_241_13_19" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 241, Column 13</em>:
+         <pre><code class="input">&lt;a class=&quot;text-link&quot; href=&quot;#about&quot;&gt;A little about me &lt;span aria-hidden=&quot;true&quot;&gt;&amp;nearr;&lt;/span&gt;&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_350_13_19" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 350, Column 13</em>:
+         <pre><code class="input">&lt;a class=&quot;text-link&quot; href=&quot;https://www.informatics.uci.edu/&quot;&gt;Explore Informatics at UCI &lt;span aria-h ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_369_83_19" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 369, Column 83</em>:
+         <pre><code class="input">&lt;a class=&quot;text-link&quot; href=&quot;#work&quot;&gt;Revisit the projects &lt;span aria-hidden=&quot;true&quot;&gt;&amp;uarr;&lt;/span&gt;&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_373_140_19" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 373, Column 140</em>:
+         <pre><code class="input">&lt;a href=&quot;#top&quot;&gt;Back to top &lt;span aria-hidden=&quot;true&quot;&gt;&amp;uarr;&lt;/span&gt;&lt;/a&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+<h4>Success Criteria 2.4.5 Multiple Ways (AA)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 184:
+              <a href="https://achecks.org/checker/suggestion.php?id=184"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=184'); return false;"
+                 target="_new">Site missing site map.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_368" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_213_3_184" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 213, Column 3</em>:
+         <pre><code class="input">&lt;body&gt;
+    &lt;!-- The skip link is the first keyboard stop on the page. --&gt;
+    &lt;a class=&quot;skip-link&quot; h ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+<h4>Success Criteria 2.4.6 Headings and Labels (AA)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 42:
+              <a href="https://achecks.org/checker/suggestion.php?id=42"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=42'); return false;"
+                 target="_new"><code>h1</code> may be used for formatting.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_369" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_237_11_42" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 237, Column 11</em>:
+         <pre><code class="input">&lt;h1 id=&quot;hero-title&quot;&gt;Thoughtful interfaces.&lt;br&gt;&lt;em&gt;Everyday impact.&lt;/em&gt;&lt;/h1&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 43:
+              <a href="https://achecks.org/checker/suggestion.php?id=43"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=43'); return false;"
+                 target="_new"><code>h2</code> may be used for formatting.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_369" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_248_11_43" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 248, Column 11</em>:
+         <pre><code class="input">&lt;h2 id=&quot;lens-title&quot;&gt;The person&lt;br&gt;behind the screen.&lt;/h2&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_260_57_43" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 260, Column 57</em>:
+         <pre><code class="input">&lt;h2 id=&quot;work-title&quot;&gt;From a need to an idea.&lt;/h2&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_345_81_43" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 345, Column 81</em>:
+         <pre><code class="input">&lt;h2 id=&quot;about-title&quot;&gt;People first.&lt;br&gt;&lt;em&gt;Curiosity always.&lt;/em&gt;&lt;/h2&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_356_89_43" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 356, Column 89</em>:
+         <pre><code class="input">&lt;h2 id=&quot;focus-title&quot;&gt;A growing design practice.&lt;/h2&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 44:
+              <a href="https://achecks.org/checker/suggestion.php?id=44"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=44'); return false;"
+                 target="_new"><code>h3</code> may be used for formatting.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_369" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_273_15_44" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 273, Column 15</em>:
+         <pre><code class="input">&lt;h3 id=&quot;zotrent-title&quot;&gt;ZOTrent&lt;/h3&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_298_15_44" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 298, Column 15</em>:
+         <pre><code class="input">&lt;h3 id=&quot;safety-title&quot;&gt;Safer conversations&lt;/h3&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_323_15_44" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 323, Column 15</em>:
+         <pre><code class="input">&lt;h3 id=&quot;gaming-title&quot;&gt;AI Gaming Companion&lt;/h3&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 45:
+              <a href="https://achecks.org/checker/suggestion.php?id=45"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=45'); return false;"
+                 target="_new"><code>h4</code> may be used for formatting.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_369" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_280_19_45" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 280, Column 19</em>:
+         <pre><code class="input">&lt;h4&gt;The context&lt;/h4&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_282_19_45" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 282, Column 19</em>:
+         <pre><code class="input">&lt;h4&gt;The concept&lt;/h4&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_284_19_45" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 284, Column 19</em>:
+         <pre><code class="input">&lt;h4&gt;A design question&lt;/h4&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_305_19_45" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 305, Column 19</em>:
+         <pre><code class="input">&lt;h4&gt;The stakeholders&lt;/h4&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_307_19_45" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 307, Column 19</em>:
+         <pre><code class="input">&lt;h4&gt;The design focus&lt;/h4&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_309_19_45" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 309, Column 19</em>:
+         <pre><code class="input">&lt;h4&gt;A design question&lt;/h4&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_330_19_45" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 330, Column 19</em>:
+         <pre><code class="input">&lt;h4&gt;The context&lt;/h4&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_332_19_45" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 332, Column 19</em>:
+         <pre><code class="input">&lt;h4&gt;The concept&lt;/h4&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+           <tr>
+             <td>         <span class="err_type"><img id="msg_icon_334_19_45" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 334, Column 19</em>:
+         <pre><code class="input">&lt;h4&gt;A design question&lt;/h4&gt;</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+<h3>3.1 Readable: Make text content readable and understandable.</h3><br/>
+<h4>Success Criteria 3.1.2 Language Parts (AA)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 110:
+              <a href="https://achecks.org/checker/suggestion.php?id=110"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=110'); return false;"
+                 target="_new">Words or phrases that are not in the document's primary language may not be identified.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_371" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_213_3_110" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 213, Column 3</em>:
+         <pre><code class="input">&lt;body&gt;
+    &lt;!-- The skip link is the first keyboard stop on the page. --&gt;
+    &lt;a class=&quot;skip-link&quot; h ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+<h3>3.2 Predictable: Make Web pages appear and operate in predictable ways.</h3><br/>
+<h4>Success Criteria 3.2.3 Consistent Navigation (AA)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 276:
+              <a href="https://achecks.org/checker/suggestion.php?id=276"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=276'); return false;"
+                 target="_new">Repeated components may not appear in the same relative order each time they appear.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_372" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_213_3_276" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 213, Column 3</em>:
+         <pre><code class="input">&lt;body&gt;
+    &lt;!-- The skip link is the first keyboard stop on the page. --&gt;
+    &lt;a class=&quot;skip-link&quot; h ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+<h4>Success Criteria 3.2.4 Consistent Identification (AA)</h4><br/>
+        <div class="gd_one_check">
+           <span class="gd_msg">Check 131:
+              <a href="https://achecks.org/checker/suggestion.php?id=131"
+                 onclick="AChecker.popup('https://achecks.org/checker/suggestion.php?id=131'); return false;"
+                 target="_new">Long quotations may not be marked using the <code>blockquote</code> element.</a>
+           </span>
+
+           <div class="gd_question_section">
+           
+           
+           </div>
+
+           <table id="tb_problems_373" class="data static">
+                      <tr>
+             <td>         <span class="err_type"><img id="msg_icon_213_3_131" src="https://achecks.org/images/info.png" alt="Manual Check Required" title="Manual Check Required" width="15" height="15" /></span>
+         <em>Line 213, Column 3</em>:
+         <pre><code class="input">&lt;body&gt;
+    &lt;!-- The skip link is the first keyboard stop on the page. --&gt;
+    &lt;a class=&quot;skip-link&quot; h ...</code></pre>
+         
+         <p class="helpwanted">
+         </p>
+         
+</td>
+           </tr>
+
+           
+           </table>
+         </div>
+	</div>
+
+	<div id="AC_html_validation_result" style="margin-top:1em; display:none;">
+<br /><span class="info_msg"><img src="https://achecks.org/images/info.png" width="15" height="15" alt="Information"/>  HTML Validator is turned off. Enable it in "Options".</span>	</div>
+	
+		<div id="AC_css_validation_result" style="margin-top:1em; display:none;">
+<br /><span class="info_msg"><img src="https://achecks.org/images/info.png" width="15" height="15" alt="Information"/>  CSS Validator is only available when validating by URL.</span>	</div>
+	</fieldset>
+
+</div>
+
+</div><br />
+
+
+
+<div style="margin-left:auto; margin-right:auto; width:20em;">
+	<small>Web site engine's code is copyright &copy; 2023</small><br />
+	
+</div>
+ 
+
+</div> <!--  end center-content div -->
+<div class="bottom"><span></span></div><!--  bottom for liquid-round theme -->
+</div> <!-- end liquid-round div -->
+<div style="margin-left:auto; margin-right:auto; width:56px;">
+		<a href="http://inclusivedesign.ca/"><img width="56" src="https://achecks.org/themes/default/images/IDI.png" height="73" alt="Inclusive Design Institute" title="Inclusive Design Institute" style="border:none;"/></a> 
+	</div>
+<script language="javascript" type="text/javascript">
+//<!--
+var selected;
+function rowselect(obj) {
+	obj.className = 'selected';
+	if (selected && selected != obj.id)
+		document.getElementById(selected).className = '';
+	selected = obj.id;
+}
+function rowselectbox(obj, checked, handler) {
+	var functionDemo = new Function(handler + ";");
+	functionDemo();
+
+	if (checked)
+		obj.className = 'selected';
+	else
+		obj.className = '';
+}
+//-->
+</script>
+<div align="center" style="clear:both;margin-left:auto; width:15em;margin-right:auto;">
+	
+</div>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+打开作品集
+1. 把提交 ZIP 完整解压。
+2. 用 Chrome 打开里面的 index.html。
+3. index.html、styles.css 和 images 文件夹要保持在一起。
+
+仓库
+https://github.com/krjs1208/a1-portfolio
+这是老师 uci-inf-133/a1-portfolio 的 Fork，默认分支为 master。
+作品集代码、README、图片与验证资料已一并放进该副本。
+邮箱已确认：kexinc22@uci.edu。
+
+这版包含
+- 原生 HTML/CSS 作品集与三个课程项目。
+- 响应式导航、可展开的项目介绍、带行列标题关联的表格。
+- 三张真实 JPG 验证截图：W3C HTML、W3C CSS、AChecker。
+- AChecker 为 0 个已知问题、0 个疑似问题；61 项人工判断提示的理由在 README 中。
+- 项目封面标为示意图，可替换成你自己的真实项目截图。
+
+提交前
+- 在 Chrome 打开并用设备模式查看手机、平板、桌面宽度。
+  本版已做静态布局检查，未完成 Chrome 设备模拟和屏幕阅读器手工测试。
+- 用 Tab 检查跳过导航链接、导航、链接及三个可展开的项目介绍。
+- 阅读 readme.txt，补充在本次聊天之外实际咨询的人和额外的个人用时。
+- 在 Canvas 上传完整 ZIP，不要只交 index.html；无需 npm 安装或公开上线。
+
+如果之后修改 HTML/CSS 或更换图片
+请重新运行验证并更新对应的 JPG 截图，保持验证结果和实际代码一致。

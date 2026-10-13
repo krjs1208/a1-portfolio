@@ -1,0 +1,199 @@
+/* IN4MATX 133 A1: original, buildless portfolio.
+   Structure: base / navigation / hero / projects / about / table / breakpoints.
+   System font stacks and local assets keep the page usable offline. */
+
+/* Base and visible keyboard focus. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: #24382f;
+  background-color: #f7f6f0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+h1, h2, h3, h4, p, figure { margin: 0; }
+h1, h2, h3 { line-height: 1.15; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
+em { font-weight: inherit; }
+a { color: #254d3c; text-underline-offset: 0.22em; }
+a:hover { color: #102d22; }
+a:focus, summary:focus { outline: 3px solid #8e4024; outline-offset: 5px; }
+img { display: block; max-width: 100%; height: auto; }
+ul { margin: 0; padding: 0; }
+.container { width: 90%; max-width: 1120px; margin-left: auto; margin-right: auto; }
+.eyebrow { color: #506453; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+.text-link { font-size: 0.9rem; font-weight: 600; }
+.text-link > span { display: inline-block; margin-left: 0.4rem; }
+.skip-link { position: absolute; top: -12rem; left: 1rem; z-index: 10; padding: 0.75rem 1rem; background-color: #fff; color: #24382f; }
+.skip-link:focus { top: 1rem; }
+
+/* The navigation stays visible and wraps on narrow screens; no hidden menu. */
+.site-header { border-bottom: 1px solid #d9ded2; }
+.header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding-top: 1.35rem; padding-bottom: 1.35rem; }
+.wordmark { display: inline-flex; align-items: center; color: #24382f; font-weight: 600; font-size: 0.88rem; text-decoration: none; }
+.monogram { margin-right: 0.9rem; font-size: 2rem; font-family: Georgia, "Times New Roman", serif; font-weight: 400; line-height: 1; }
+.nav-list { display: flex; flex-wrap: wrap; list-style: none; }
+.nav-list > li + li { margin-left: 1.6rem; }
+.nav-list a { display: inline-block; padding: 0.55rem 0.15rem; font-size: 0.88rem; text-decoration: none; border-bottom: 1px solid transparent; }
+.nav-list a:hover { border-bottom-color: #254d3c; }
+
+/* Two-column hero becomes one column below 760px. */
+.hero { display: grid; grid-template-columns: 1.55fr 1fr; grid-gap: 5%; align-items: center; padding-top: 5.75rem; padding-bottom: 6rem; }
+.hero-copy { min-width: 0; }
+.hero h1 { margin-top: 1.35rem; font-size: 3.6rem; letter-spacing: -0.05em; }
+.hero h1 em { color: #47634b; }
+.hero-intro { max-width: 29rem; margin-top: 1.5rem; color: #4d5b50; font-size: 1.05rem; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; margin-top: 1.8rem; }
+.hero-actions > .text-link { margin: 0.8rem 0 0.8rem 1.5rem; }
+.button { display: inline-flex; align-items: center; justify-content: center; padding: 0.9rem 1.3rem; border: 1px solid #254d3c; font-size: 0.9rem; font-weight: 600; text-decoration: none; border-radius: 0.3rem; }
+.button > span { margin-left: 1rem; }
+.button-primary { color: #fff; background-color: #254d3c; }
+.button-primary:hover { color: #fff; background-color: #102d22; }
+.location { display: flex; align-items: center; margin-top: 1.8rem; color: #596658; font-size: 0.78rem; }
+.location-dot { width: 0.4rem; height: 0.4rem; margin-right: 0.6rem; border-radius: 50%; background-color: #526c46; }
+.design-note { min-width: 0; padding: 2rem; border: 1px solid #cbd3bf; border-radius: 0.6rem; background-color: #e9eddc; }
+.note-topline { display: flex; align-items: center; justify-content: space-between; }
+.note-topline .eyebrow { max-width: 12rem; font-size: 0.64rem; }
+.note-star { margin-left: 1rem; color: #526943; font-size: 2.4rem; line-height: 1; }
+.design-note h2 { margin-top: 1.8rem; font-size: 2.5rem; letter-spacing: -0.03em; }
+.lens-list { margin: 1.8rem 0 0; padding: 0; list-style: none; }
+.lens-list > li { display: flex; padding: 0.7rem 0; border-top: 1px solid #cbd3bf; font-size: 0.86rem; }
+.lens-number { margin-right: 0.9rem; color: #53644c; font-size: 0.7rem; }
+.note-foot { margin-top: 1.2rem; color: #50604c; font-size: 0.72rem; }
+
+/* One featured project followed by a two-column project grid. */
+.work-section { padding-bottom: 5rem; }
+.section-heading { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; margin-bottom: 2rem; }
+.section-heading h2 { margin-top: 0.65rem; font-size: 2.4rem; letter-spacing: -0.035em; }
+.section-heading > p { margin-top: 1rem; color: #576353; font-size: 0.86rem; }
+.projects-grid { display: flex; flex-wrap: wrap; gap: 1.8rem; }
+.project { flex: 0 0 calc(50% - 0.9rem); min-width: 0; border: 1px solid #d5dbcd; border-radius: 0.6rem; background-color: #fffefa; }
+.project-featured { display: flex; flex-basis: 100%; }
+.project-figure { position: relative; min-width: 0; border-radius: 0.6rem 0.6rem 0 0; }
+.project-featured .project-figure { flex: 0 0 52%; border-radius: 0.6rem 0 0 0.6rem; }
+.project-figure img { width: 100%; border-radius: inherit; }
+.project-figure figcaption { position: absolute; bottom: 0.8rem; left: 1.1rem; color: #405347; font-size: 0.65rem; }
+.cover-housing { background-color: #e6eddf; }
+.cover-safety { background-color: #eee8df; }
+.cover-gaming { background-color: #e5e9ec; }
+.project-copy { min-width: 0; padding: 1.8rem; }
+.project-featured .project-copy { flex: 1; padding: 2.3rem; }
+.project-kicker { margin-bottom: 0.8rem; color: #55644f; font-size: 0.67rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; }
+.project-kicker > span { margin: 0 0.45rem; }
+.project h3 { font-size: 1.6rem; font-weight: 600; letter-spacing: -0.025em; }
+.project-subtitle { margin-top: 0.5rem; color: #435345; font-size: 0.94rem; font-weight: 500; }
+.project-subtitle + p { margin-top: 1rem; color: #566152; font-size: 0.88rem; }
+.tags { display: flex; flex-wrap: wrap; margin-top: 1.2rem; list-style: none; }
+.tags > li { margin: 0 0.4rem 0.45rem 0; padding: 0.15rem 0.65rem; border: 1px solid #d7ddce; border-radius: 1rem; color: #475743; background-color: #f4f6ee; font-size: 0.67rem; }
+
+/* Native details/summary supports both keyboard and pointer interaction. */
+.project-details { margin-top: 1.1rem; border-top: 1px solid #d9decf; }
+.project-details summary { padding-top: 1rem; padding-bottom: 0.5rem; color: #254d3c; font-size: 0.8rem; font-weight: 600; cursor: pointer; }
+.project-details summary:hover { text-decoration: underline; }
+.details-content { padding-top: 0.8rem; }
+.details-content h4 { font-size: 0.86rem; line-height: 1.5; }
+.details-content p { margin-top: 0.35rem; color: #566152; font-size: 0.84rem; }
+.details-content p + h4 { margin-top: 1rem; }
+
+/* About uses semantic content rather than a visual table. */
+.about-section { padding-top: 4rem; padding-bottom: 4rem; border-top: 1px solid #d9ded2; border-bottom: 1px solid #d9ded2; background-color: #edf0e4; }
+.about-grid { display: grid; grid-template-columns: 1fr 1.15fr; grid-gap: 8%; }
+.about-title h2 { margin-top: 1rem; font-size: 2.9rem; letter-spacing: -0.04em; }
+.about-title em { color: #47634b; }
+.about-copy { min-width: 0; color: #465544; font-size: 0.95rem; }
+.about-copy p + p { margin-top: 1rem; }
+.about-copy .text-link { display: inline-block; margin-top: 1.4rem; }
+
+/* An accessible two-column data table wraps inside small screens. */
+.focus-section { padding-top: 4rem; padding-bottom: 4rem; }
+.table-wrapper { min-width: 0; }
+.focus-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 0.9rem; }
+.focus-table caption { padding-bottom: 0.9rem; color: #566152; font-size: 0.78rem; text-align: left; caption-side: top; }
+.focus-table th, .focus-table td { padding: 1rem 1.2rem; border-bottom: 1px solid #d3dac9; text-align: left; vertical-align: top; overflow-wrap: break-word; }
+.focus-table thead th { color: #3b503c; background-color: #e6ebdd; font-size: 0.75rem; font-weight: 600; }
+.focus-table thead th:first-child { width: 35%; }
+.focus-table tbody th { font-weight: 500; }
+.focus-table td { color: #52604e; }
+.closing-note { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #d3dac9; }
+.closing-note p { margin-bottom: 0.5rem; font-family: Georgia, "Times New Roman", serif; font-size: 1.65rem; }
+.closing-note .text-link { margin-bottom: 0.5rem; }
+.site-footer { border-top: 1px solid #d9ded2; }
+.footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding-top: 1.5rem; padding-bottom: 1.5rem; color: #576353; font-size: 0.72rem; }
+.footer-inner > * { margin: 0.25rem 1rem 0.25rem 0; }
+
+/* Tablet: reduce type and spacing before columns become too cramped. */
+@media (max-width: 1000px) {
+  .hero { padding-top: 4rem; padding-bottom: 4rem; grid-gap: 4%; }
+  .hero h1 { font-size: 2.8rem; }
+  .hero-intro { font-size: 0.98rem; }
+  .design-note { padding: 1.5rem; }
+  .design-note h2 { font-size: 2.05rem; }
+  .project-featured .project-copy { padding: 1.7rem; }
+  .hero-actions > .text-link { margin-left: 1rem; }
+}
+
+/* Mobile: preserve every project and navigation item in reading order. */
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; grid-gap: 2.5rem; padding-top: 3rem; padding-bottom: 3.5rem; }
+  .hero h1 { font-size: 2.8rem; }
+  .hero-intro { max-width: 34rem; }
+  .design-note { padding: 1.6rem; }
+  .design-note h2 { margin-top: 1rem; font-size: 2.2rem; }
+  .lens-list { margin-top: 1.2rem; }
+  .note-foot { margin-top: 0.9rem; }
+  .section-heading { display: block; }
+  .section-heading h2 { font-size: 2.1rem; }
+  .desktop-break { display: none; }
+  .project { flex-basis: 100%; }
+  .project-featured { display: block; }
+  .project-featured .project-figure { border-radius: 0.6rem 0.6rem 0 0; }
+  .project-copy, .project-featured .project-copy { padding: 1.5rem; }
+  .work-section { padding-bottom: 3rem; }
+  .about-section { padding-top: 3rem; padding-bottom: 3rem; }
+  .about-grid { grid-template-columns: 1fr; grid-gap: 1.6rem; }
+  .about-title h2 { font-size: 2.4rem; }
+  .focus-section { padding-top: 3rem; padding-bottom: 3rem; }
+  .focus-table th, .focus-table td { padding: 0.85rem 0.55rem; font-size: 0.8rem; }
+  .focus-table thead th:first-child { width: 38%; }
+  .closing-note { display: block; margin-top: 2rem; }
+  .closing-note p { font-size: 1.5rem; }
+  .closing-note .text-link { display: inline-block; margin-top: 0.8rem; }
+}
+
+/* Small phones and enlarged text: let the header and calls to action wrap. */
+@media (max-width: 430px) {
+  .container { width: 89%; }
+  .header-inner { display: block; padding-top: 1.2rem; padding-bottom: 0.7rem; }
+  .nav-list { margin-top: 0.6rem; }
+  .nav-list > li + li { margin-left: 1.8rem; }
+  .hero h1 { font-size: 2.3rem; }
+  .hero .eyebrow { font-size: 0.66rem; }
+  .hero-actions { display: block; }
+  .hero-actions > .text-link { display: inline-block; margin: 1.1rem 0 0; }
+  .design-note h2 { font-size: 2rem; }
+  .section-heading h2 { font-size: 1.9rem; }
+  .project-copy { padding: 1.25rem; }
+  .project h3 { font-size: 1.45rem; }
+  .footer-inner { display: block; }
+  .footer-inner > * { display: block; margin-top: 0.4rem; }
+}
+
+/* Respect reduced-motion preferences; do not force animated scrolling. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* A useful print version also exposes the project briefs. */
+@media print {
+  body { color: #000; background-color: #fff; }
+  .container { width: 100%; }
+  .hero { padding-top: 1rem; padding-bottom: 2rem; }
+  .site-header nav, .hero-actions, .skip-link, .closing-note, .site-footer a { display: none; }
+  .projects-grid, .project-featured, .hero, .about-grid { display: block; }
+  .project { margin-bottom: 1.5rem; break-inside: avoid; }
+  .project-figure { max-width: 22rem; }
+  .project-details .details-content { display: block; }
+  .design-note { margin-top: 1.5rem; }
+}

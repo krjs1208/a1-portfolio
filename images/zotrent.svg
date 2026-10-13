@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560">
+  <title>ZOTrent portfolio concept illustration</title>
+  <rect width="800" height="560" fill="#e6eddf"/>
+  <circle cx="620" cy="105" r="140" fill="#d4dfcb"/>
+  <circle cx="105" cy="485" r="180" fill="#dbe4d1"/>
+  <rect x="121" y="108" width="482" height="326" rx="16" fill="#c9d4bd"/>
+  <rect x="111" y="96" width="482" height="326" rx="16" fill="#fffefa" stroke="#bdcbb0" stroke-width="2"/>
+  <path d="M111 140H593" stroke="#dbe2d1" stroke-width="2"/>
+  <circle cx="133" cy="118" r="4" fill="#dba68c"/><circle cx="148" cy="118" r="4" fill="#cfbf7e"/><circle cx="163" cy="118" r="4" fill="#8faa80"/>
+  <text x="184" y="122" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#2c4437">ZOTrent</text>
+  <rect x="137" y="166" width="266" height="183" rx="8" fill="#dfe7d3"/>
+  <path d="M163 273L269 182L376 273" fill="#8aab83" stroke="#4e7050" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M190 259V333H348V259L269 195Z" fill="#fafaf0" stroke="#56734f" stroke-width="3"/>
+  <rect x="254" y="280" width="34" height="53" rx="3" fill="#506e4b"/>
+  <rect x="208" y="269" width="27" height="27" rx="3" fill="#b4c6a8"/><rect x="309" y="269" width="27" height="27" rx="3" fill="#b4c6a8"/>
+  <path d="M155 332H385" stroke="#8ca27b" stroke-width="3"/>
+  <text x="139" y="377" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#304638">A place to call home.</text>
+  <text x="139" y="401" font-family="Arial, sans-serif" font-size="12" fill="#53634d">Housing + roommate matching</text>
+  <text x="426" y="188" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#40563e">YOUR PEOPLE</text>
+  <circle cx="441" cy="225" r="17" fill="#b8cba7"/><circle cx="441" cy="221" r="5" fill="#4f6747"/><path d="M431 234Q441 222 451 234" fill="#4f6747"/>
+  <rect x="466" y="216" width="90" height="7" rx="3" fill="#67845b"/><rect x="466" y="231" width="66" height="5" rx="2" fill="#becbb1"/>
+  <circle cx="441" cy="274" r="17" fill="#ebd4b4"/><circle cx="441" cy="270" r="5" fill="#967252"/><path d="M431 283Q441 271 451 283" fill="#967252"/>
+  <rect x="466" y="265" width="70" height="7" rx="3" fill="#67845b"/><rect x="466" y="280" width="89" height="5" rx="2" fill="#becbb1"/>
+  <circle cx="441" cy="323" r="17" fill="#cddcdb"/><circle cx="441" cy="319" r="5" fill="#5a7970"/><path d="M431 332Q441 320 451 332" fill="#5a7970"/>
+  <rect x="466" y="314" width="90" height="7" rx="3" fill="#67845b"/><rect x="466" y="329" width="59" height="5" rx="2" fill="#becbb1"/>
+  <rect x="515" y="353" width="171" height="91" rx="12" fill="#254d3c"/>
+  <path d="M540 388L548 396L563 378" fill="none" stroke="#d7e4c6" stroke-width="4" stroke-linecap="round"/>
+  <text x="578" y="390" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#fffefa">Better together.</text>
+  <text x="539" y="420" font-family="Arial, sans-serif" font-size="12" fill="#d5e1cb">Community starts here.</text>
+</svg>
