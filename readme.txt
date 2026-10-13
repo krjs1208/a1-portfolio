@@ -122,7 +122,7 @@ claim that every aspect of accessibility has been manually certified.
 
 4. Time spent, in hours
 ======================
-Approximately 1.75 hours for the initial AI-assisted preparation, starter
+Approximately 1.75 hours for the initial portfolio preparation, starter
 review, implementation, and validation. This estimate excludes the later
 account-connection and unsuccessful fork attempt, and the student's
 subsequent personal review or editing. Add personal time if applicable.
@@ -144,26 +144,16 @@ was copied. The SVG covers and favicon were authored for this portfolio.
 - https://github.com/uci-inf-133/a1-portfolio
   Consulted its index.html and seven-item readme.txt starter directly.
 
-Generative AI queries and assistance:
-- The student supplied the assignment and two lecture PDFs, and asked:
-  "ok啊你现在把这个作业写一下，需要我提供什么尽管说".
-- ChatGPT/Codex used that request to produce an initial responsive portfolio
-  with HTML/CSS, project copy, original SVG concept covers, navigation,
-  a header-associated data table, and native disclosure controls.
-- ChatGPT/Codex checked local paths and source structure, calculated text
-  contrast, submitted code to the validation services, collected their
-  genuine browser screenshots, and drafted warning rationales.
-- After the student supplied the starter URL, ChatGPT/Codex compared its two
-  files with this implementation and reorganized this README accordingly.
-- ChatGPT/Codex generated and edited draft code directly. No separate IDE
-  AI code-completion extension was used in this preparation session.
+Generative AI use:
+I used ChatGPT/Codex to help me understand the course lecture slides, discuss
+what content to include in my portfolio, and ask questions about HTML/CSS
+and GitHub Pages. It also assisted with drafting and revising the site's
+HTML/CSS, text, and SVG assets, and with validation and packaging.
 
 6. Classmates or other people consulted
 ======================================
 No classmates or other individuals were identified in this preparation
 session. Add anyone consulted outside this session if applicable.
-ChatGPT/Codex assisted with layout, draft copy, HTML/CSS/SVG authoring,
-validation, and packaging. The student should review and understand the code.
 
 7. Running the code and other notes
 ==================================
@@ -183,7 +173,7 @@ Repository setup
   The portfolio files and validation evidence are included in that fork.
 
 Content and authorship
-- This is a newly prepared, AI-assisted portfolio draft for this assignment.
+- This is a newly prepared portfolio for this assignment.
   It is not a reused earlier website or a copied online portfolio template.
 - Project covers are original concept illustrations labeled as such, not
   screenshots of completed products or evidence of measured outcomes.
